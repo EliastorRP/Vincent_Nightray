@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+
+<html lang="fr">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Vincent Nightray</title>
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body class="home-body">
+
+    <!-- =====================================================
+         NAVIGATION
+         ===================================================== -->
+
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="identite.html">Identité</a>
+        <a href="mentalite.html">Mentalité</a>
+        <a href="histoire.html">Histoire</a>
+        <a href="physique.html">Description physique</a>
+        <a href="capacites.html">Capacités</a>
+        <a href="possessions.html">Possessions</a>
+        <a href="fun-facts.html">Fun facts</a>
+    </nav>
+
+
+    <!-- =====================================================
+         ACCUEIL
+         ===================================================== -->
+
+    <main class="home-page">
+
+    <!-- =====================================================
+         ÉCRAN PLAY
+         ===================================================== -->
+
+    <div class="home-gate" data-home-gate>
+
+        <div class="home-gate-noise"></div>
+
+        <button
+            class="home-play"
+            type="button"
+            data-home-play
+        >
+            <span class="home-play-symbol">
+                ▶
+            </span>
+
+            <span class="home-play-label">
+                PLAY
+            </span>
+
+            <small>
+                CLICK TO ENTER
+            </small>
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         MUSIQUE
+         ===================================================== -->
+
+    <audio
+        id="home-audio"
+        src="assets/audio/accueil-ost.mp3"
+        loop
+        preload="auto"
+    ></audio>
+
+
+    <!-- =====================================================
+         SCÈNE
+         ===================================================== -->
+
+    <section
+        class="home-trip"
+        data-home-trip
+        aria-hidden="true"
+    >
+
+<div
+    class="home-crash-clock"
+    data-home-crash-clock
+    aria-hidden="true"
+></div>
+
+<!-- GRAND CRASH : couches temporaires, purement visuelles -->
+<div class="crash-spectacle" data-crash-spectacle aria-hidden="true">
+    <div class="crash-flash crash-flash-white"></div>
+    <div class="crash-flash crash-flash-red"></div>
+    <div class="crash-blackout"></div>
+    <div class="crash-noise"></div>
+    <div class="crash-rgb"></div>
+    <div class="crash-tears" data-crash-tears></div>
+</div>
+
+<!-- CICATRICES : un nouveau bug permanent à chaque crash, sans limite -->
+<div class="corruption-field" data-corruption-field aria-hidden="true"></div>
+
+<div class="hallucination-field" aria-hidden="true">
+
+    <!-- YEUX -->
+    <div class="hall-eye hall-eye-1">
+        <i></i>
+    </div>
+
+    <div class="hall-eye hall-eye-2">
+        <i></i>
+    </div>
+
+    <div class="hall-eye hall-eye-3">
+        <i></i>
+    </div>
+
+    <div class="hall-eye hall-eye-4">
+        <i></i>
+    </div>
+
+
+    <!-- ANNEAUX / SPIRALES -->
+    <div class="hall-ring hall-ring-1"></div>
+    <div class="hall-ring hall-ring-2"></div>
+    <div class="hall-ring hall-ring-3"></div>
+
+    <div class="hall-spiral hall-spiral-1"></div>
+    <div class="hall-spiral hall-spiral-2"></div>
+
+
+    <!-- PETITS PARASITES -->
+    <span class="hall-symbol hall-symbol-1">✦</span>
+    <span class="hall-symbol hall-symbol-2">×</span>
+    <span class="hall-symbol hall-symbol-3">○</span>
+    <span class="hall-symbol hall-symbol-4">+</span>
+    <span class="hall-symbol hall-symbol-5">※</span>
+    <span class="hall-symbol hall-symbol-6">∿</span>
+    <span class="hall-symbol hall-symbol-7">⊙</span>
+    <span class="hall-symbol hall-symbol-8">⌁</span>
+
+
+    <!-- LIGNES / GRIFFURES -->
+    <div class="hall-scratch hall-scratch-1"></div>
+    <div class="hall-scratch hall-scratch-2"></div>
+    <div class="hall-scratch hall-scratch-3"></div>
+
+</div>
+        <!-- ===============================================
+             MOTS EN LIBERTÉ
+             =============================================== -->
+
+        <div class="home-words" aria-hidden="true">
+
+            <span class="trip-word">
+                VAMPIRE
+            </span>
+
+            <span class="trip-word">
+                CANNABIS
+            </span>
+
+            <span class="trip-word">
+                MANQUE
+            </span>
+
+            <span class="trip-word">
+                SANG
+            </span>
+
+            <span class="trip-word">
+                FRÈGÈTAL
+            </span>
+
+            <span class="trip-word">
+                HALLUCINATION
+            </span>
+
+            <span class="trip-word">
+                DÉPENDANCE
+            </span>
+
+            <span class="trip-word">
+                FUMÉE
+            </span>
+
+            <span class="trip-word">
+                CROQUIS
+            </span>
+
+            <span class="trip-word">
+                PATIENCE
+            </span>
+
+            <span class="trip-word">
+                CHIMIE
+            </span>
+
+            <span class="trip-word">
+                147 ANS
+            </span>
+
+            <span class="trip-word">
+                STALION
+            </span>
+
+            <span class="trip-word">
+                OUBLI
+            </span>
+
+        </div>
+
+        <!-- ===============================================
+     PHRASE ERRATIQUE
+     =============================================== -->
+
+<div
+    class="trip-sentence"
+    data-trip-sentence
+    aria-label="Hier, aujourd’hui, demain… Vous leur donnez des noms parce que vous avez peur que tout se ressemble."
+>
+
+    <span>Hier,</span>
+    <span>aujourd’hui,</span>
+    <span>demain…</span>
+    <span>Vous</span>
+    <span>leur</span>
+    <span>donnez</span>
+    <span>des</span>
+    <span>noms</span>
+    <span>parce</span>
+    <span>que</span>
+    <span>vous</span>
+    <span>avez</span>
+    <span>peur</span>
+    <span>que</span>
+    <span>tout</span>
+    <span>se</span>
+    <span>ressemble.</span>
+
+</div>
+
+
+        <!-- ===============================================
+             CENTRE
+             =============================================== -->
+
+        <div class="home-center">
+
+
+            <!-- PHOTO -->
+
+            <figure class="home-vincent-photo">
+
+                <div class="vincent-afterimages" aria-hidden="true">
+
+    <img
+        class="vincent-ghost vincent-ghost-red"
+        src="assets/images/accueil.png"
+        alt=""
+    >
+
+    <img
+        class="vincent-ghost vincent-ghost-green"
+        src="assets/images/accueil.png"
+        alt=""
+    >
+
+    <img
+        class="vincent-ghost vincent-ghost-purple"
+        src="assets/images/accueil.png"
+        alt=""
+    >
+
+</div>
+
+                <div class="home-vincent-image image-critical-trip">
+
+                    <img
+                        src="assets/images/accueil.png"
+                        alt="Vincent Nightray"
+                    >
+
+                </div>
+
+                <figcaption>
+                    SUBJECT // VN
+                </figcaption>
+
+            </figure>
+
+
+            <!-- NOM -->
+
+            <div class="home-vincent-name">
+
+                <span>
+                    VINCENT
+                </span>
+
+                <strong>
+                    NIGHTRAY
+                </strong>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ===============================================
+             PETITS DÉTAILS
+             =============================================== -->
+
+        <span class="home-corner home-corner-a">
+            00 // SUBJECT
+        </span>
+
+        <span class="home-corner home-corner-b">
+            SIGNAL UNSTABLE
+        </span>
+
+
+    </section>
+
+</main>
+
+
+    <script src="js/script.js"></script>
+
+    <!-- =====================================================
+         ALERTE ANTI-SPAM
+         ===================================================== -->
+
+    <div
+        class="hurt-warning"
+        data-hurt-warning
+        aria-hidden="true"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="hurt-warning-title"
+    >
+        <div class="hurt-warning-backdrop"></div>
+
+        <section class="hurt-warning-panel" data-hurt-warning-panel>
+            <div class="hurt-warning-skull" aria-hidden="true">☠</div>
+
+            <span class="hurt-warning-code">
+                INTERVENTION
+            </span>
+
+            <h2 id="hurt-warning-title">
+                Pourquoi t'acharnes-tu à le blesser&nbsp;?
+            </h2>
+
+            <p>
+                Cesse.
+            </p>
+
+            <div class="hurt-warning-actions">
+                <button
+                    type="button"
+                    class="hurt-warning-button hurt-warning-sorry"
+                    data-hurt-sorry
+                >
+                    Pardon
+                </button>
+
+                <button
+                    type="button"
+                    class="hurt-warning-button hurt-warning-no"
+                    data-hurt-no
+                >
+                    BAHAHA non
+                </button>
+            </div>
+        </section>
+
+        <div class="hurt-screamer" data-hurt-screamer aria-hidden="true">
+            <div class="hurt-screamer-image">
+                <img
+                    src="assets/images/accueil.jpg"
+                    alt=""
+                >
+                <img
+                    src="assets/images/accueil.jpg"
+                    alt=""
+                    aria-hidden="true"
+                >
+                <img
+                    src="assets/images/accueil.jpg"
+                    alt=""
+                    aria-hidden="true"
+                >
+            </div>
+
+            <strong>TRÈS BIEN...</strong>
+        </div>
+    </div>
+
+</body>
+
+</html>
