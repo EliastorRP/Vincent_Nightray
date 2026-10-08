@@ -70,6 +70,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
         audio.addEventListener("play", () => {
+            document.querySelectorAll("audio").forEach(otherAudio => {
+                if (otherAudio !== audio && !otherAudio.paused) {
+                    otherAudio.pause();
+                }
+            });
             playSymbol.textContent = "Ⅱ";
         });
 
