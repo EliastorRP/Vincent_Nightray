@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
             return;
         }
 
-        /* Volume initial */
+        
         audio.volume = 0.2;
 
 
@@ -35,9 +35,9 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
 
-        /* =========================
-           PLAY / PAUSE
-           ========================= */
+        
+
+
 
         playButton.addEventListener("click", async () => {
 
@@ -79,9 +79,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* =========================
-           MÉTADONNÉES
-           ========================= */
+        
+
+
 
         audio.addEventListener("loadedmetadata", () => {
 
@@ -91,9 +91,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* =========================
-           PROGRESSION
-           ========================= */
+        
+
+
 
         audio.addEventListener("timeupdate", () => {
 
@@ -121,9 +121,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* =========================
-           VOLUME
-           ========================= */
+        
+
+
 
         volume.addEventListener("input", () => {
 
@@ -133,9 +133,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* =========================
-           FIN
-           ========================= */
+        
+
+
 
         audio.addEventListener("ended", () => {
 
@@ -145,9 +145,9 @@ document.addEventListener("DOMContentLoaded", () => {
         });
 
 
-        /* =========================
-           ERREUR FICHIER
-           ========================= */
+        
+
+
 
         audio.addEventListener("error", () => {
 
@@ -162,11 +162,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-/* ==========================================================
-   ==========================================================
-   PHYSIQUE — 3D SCROLL REEL
-   ==========================================================
-   ========================================================== */
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -185,18 +185,18 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
 
-    /*
-        Si nous ne sommes pas sur physique.html,
-        on arrête immédiatement.
-    */
+    
+
+
+
 
     if (!reel || !sections.length) return;
 
 
 
-    /* ======================================================
-       ACCESSIBILITÉ
-       ====================================================== */
+    
+
+
 
     const reducedMotion =
         window.matchMedia(
@@ -204,18 +204,18 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
 
-    /*
-        requestAnimationFrame évite de recalculer
-        cinquante fois pendant un seul mouvement de scroll.
-    */
+    
+
+
+
 
     let ticking = false;
 
 
 
-    /* ======================================================
-       PETITE FONCTION UTILITAIRE
-       ====================================================== */
+    
+
+
 
     function clamp(value, min, max) {
 
@@ -228,18 +228,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       CALCUL DE LA BOBINE
-       ====================================================== */
+    
+
+
 
     function updateReel() {
 
         ticking = false;
 
 
-        /*
-            En mode reduced-motion, aucune 3D.
-        */
+        
+
+
 
         if (reducedMotion.matches) {
 
@@ -283,9 +283,9 @@ document.addEventListener("DOMContentLoaded", () => {
             viewportHeight / 2;
 
 
-        /*
-            Mobile = effet beaucoup plus doux.
-        */
+        
+
+
 
         const mobile =
             window.innerWidth <= 700;
@@ -317,13 +317,13 @@ document.addEventListener("DOMContentLoaded", () => {
                 rect.height / 2;
 
 
-            /*
-                distance :
+            
 
-                0  = exactement au centre
-                -1 = environ un écran au-dessus
-                 1 = environ un écran en dessous
-            */
+
+
+
+
+
 
             const rawDistance =
                 (
@@ -347,14 +347,14 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-            /* ==============================================
-               ROTATION
+            
 
-               En haut : rotation positive.
-               En bas  : rotation négative.
 
-               C'est ce qui crée la sensation de cylindre.
-               ============================================== */
+
+
+
+
+
 
             const rotation =
                 distance *
@@ -362,12 +362,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-            /* ==============================================
-               PROFONDEUR
+            
 
-               Plus la section s'éloigne du centre,
-               plus elle part derrière l'écran.
-               ============================================== */
+
+
+
+
 
             const depth =
                 -Math.pow(
@@ -379,12 +379,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-            /* ==============================================
-               PETITE COURBURE VERTICALE
+            
 
-               Ça renforce légèrement la sensation que
-               l'élément suit la surface d'une bobine.
-               ============================================== */
+
+
+
+
 
             const vertical =
                 distance *
@@ -392,11 +392,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-            /* ==============================================
-               SCALE
+            
 
-               Très discret.
-               ============================================== */
+
+
+
 
             const scale =
                 1 -
@@ -407,12 +407,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-            /* ==============================================
-               OPACITÉ
+            
 
-               On ne la descend jamais trop bas.
-               Les éléments restent perceptibles.
-               ============================================== */
+
+
+
+
 
             const opacity =
                 1 -
@@ -423,9 +423,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-            /* ==============================================
-               OMBRAGE
-               ============================================== */
+            
+
+
 
             const fade =
                 Math.min(
@@ -467,9 +467,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-            /* ==============================================
-               SECTION ACTIVE
-               ============================================== */
+            
+
+
 
             if (
                 absoluteDistance <
@@ -488,9 +488,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-        /* ==================================================
-           MISE À JOUR DE LA PROGRESSION
-           ================================================== */
+        
+
+
 
         if (activeSection) {
 
@@ -516,12 +516,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-        /* ==================================================
-           AFFICHAGE DE LA BARRE LATÉRALE
+        
 
-           Elle n'apparaît que lorsque nous sommes
-           réellement dans la bobine.
-           ================================================== */
+
+
+
+
 
         if (progress) {
 
@@ -548,9 +548,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       SCROLL
-       ====================================================== */
+    
+
+
 
     function requestReelUpdate() {
 
@@ -590,13 +590,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       NAVIGATION LATÉRALE
+    
 
-       Les numéros peuvent être cliqués.
-       Ce n'est pas obligatoire pour comprendre la page,
-       mais autant que ça fonctionne :D
-       ====================================================== */
+
+
+
+
+
 
     progressButtons.forEach(button => {
 
@@ -632,19 +632,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       PREMIER CALCUL
-       ====================================================== */
+    
+
+
 
     updateReel();
 
 });
 
-/* ==========================================================
-   ==========================================================
-   CAPACITÉS — LE MANQUE PARTAGÉ
-   ==========================================================
-   ========================================================== */
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -665,10 +665,10 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
 
-    /*
-        Si on n'est pas sur capacites.html :
-        rien à faire.
-    */
+    
+
+
+
 
     if (!story || !thread) return;
 
@@ -677,9 +677,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       OUTIL
-       ====================================================== */
+    
+
+
 
     function clamp(value, min, max) {
 
@@ -692,9 +692,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       PROGRESSION DU FIL
-       ====================================================== */
+    
+
+
 
     function updateAbilityBond() {
 
@@ -709,19 +709,19 @@ document.addEventListener("DOMContentLoaded", () => {
             story.getBoundingClientRect();
 
 
-        /*
-            On considère que la lecture se produit
-            légèrement sous le centre de l'écran.
-        */
+        
+
+
+
 
         const readingPoint =
             viewportHeight * .58;
 
 
-        /*
-            Distance déjà parcourue à l'intérieur
-            de ability-bond-story.
-        */
+        
+
+
+
 
         const travelled =
             readingPoint -
@@ -744,9 +744,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-        /* ==================================================
-           ÉTAPE ACTUELLE
-           ================================================== */
+        
+
+
 
         let activeStage = null;
         let closestDistance = Infinity;
@@ -797,12 +797,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-        /* ==================================================
-           TROIS MORSURES
+        
 
-           Elles deviennent légèrement plus nettes
-           une fois atteintes par le lecteur.
-           ================================================== */
+
+
+
+
 
         biteStages.forEach(stage => {
 
@@ -826,9 +826,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       REQUEST ANIMATION FRAME
-       ====================================================== */
+    
+
+
 
     function requestAbilityUpdate() {
 
@@ -865,9 +865,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-/* ==========================================================
-   CAPACITÉS — ENCAISSER
-   ========================================================== */
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -909,10 +909,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 rect.height;
 
 
-            /*
-                La position du curseur devient
-                une petite poussée sur le mot.
-            */
+            
+
+
+
 
             const pushX =
                 (x - .5) * 7;
@@ -951,11 +951,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-/* ==========================================================
-   ==========================================================
-   POSSESSIONS — CARROUSEL MAISON
-   ==========================================================
-   ========================================================== */
+
+
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -991,9 +991,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       ÉTAT
-       ====================================================== */
+    
+
+
 
     let currentIndex = 0;
 
@@ -1006,17 +1006,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       AFFICHER UNE IMAGE
-       ====================================================== */
+    
+
+
 
     function showSlide(index) {
 
-        /*
-           Boucle infinie :
-           après 09 → 01
-           avant 01 → 09
-        */
+        
+
+
+
+
 
         if (index < 0) {
             index = slides.length - 1;
@@ -1071,9 +1071,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       PRÉCÉDENT / SUIVANT
-       ====================================================== */
+    
+
+
 
     function previousSlide() {
 
@@ -1111,9 +1111,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       NUMÉROS 01 — 09
-       ====================================================== */
+    
+
+
 
     dots.forEach(
         (dot, index) => {
@@ -1134,9 +1134,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       CLAVIER
-       ====================================================== */
+    
+
+
 
     carousel.setAttribute(
         "tabindex",
@@ -1166,18 +1166,18 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       GLISSER À LA SOURIS / AU DOIGT
-       ====================================================== */
+    
+
+
 
     carousel.addEventListener(
         "pointerdown",
         event => {
 
-            /*
-               Ne pas démarrer un drag
-               en cliquant sur une flèche.
-            */
+            
+
+
+
 
             if (
                 event.target.closest(
@@ -1236,10 +1236,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 currentX - startX;
 
 
-            /*
-               Seuil nécessaire pour
-               considérer le geste comme un swipe.
-            */
+            
+
+
+
 
             if (
                 Math.abs(distance) > 60
@@ -1284,13 +1284,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       AUTOPLAY
+    
 
-       Lent volontairement :
-       on ne veut pas que les images défilent
-       pendant que le lecteur essaie de les regarder.
-       ====================================================== */
+
+
+
+
+
 
     function startAutoplay() {
 
@@ -1346,9 +1346,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       PAUSE QUAND LA SOURIS EST SUR LA PHOTO
-       ====================================================== */
+    
+
+
 
     carousel.addEventListener(
         "mouseenter",
@@ -1363,9 +1363,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       INITIALISATION
-       ====================================================== */
+    
+
+
 
     showSlide(0);
 
@@ -1376,9 +1376,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-/* ==========================================================
-   FRÈGÈTAL — CARROUSEL SURFACE
-   ========================================================== */
+
+
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -1534,9 +1534,9 @@ document.addEventListener("DOMContentLoaded", () => {
         );
 
 
-        /* ==============================================
-           SWIPE
-           ============================================== */
+        
+
+
 
         carousel.addEventListener(
             "pointerdown",
@@ -1656,10 +1656,10 @@ document.addEventListener("DOMContentLoaded", () => {
                 fact.classList.contains("open");
 
 
-            /*
-             * On referme les autres.
-             * Donc un seul fragment ouvert à la fois.
-             */
+            
+
+
+
 
             facts.forEach((otherFact) => {
 
@@ -1686,10 +1686,10 @@ document.addEventListener("DOMContentLoaded", () => {
             });
 
 
-            /*
-             * Si celui-ci était fermé,
-             * on l'ouvre.
-             */
+            
+
+
+
 
             if (!isOpen) {
 
@@ -1718,9 +1718,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
 
-    /* ======================================================
-       ACCUEIL — PARALLAX CURSEUR
-       ====================================================== */
+    
+
+
 
     const stage =
         document.querySelector("[data-home-stage]");
@@ -1764,11 +1764,11 @@ document.addEventListener("DOMContentLoaded", () => {
                     y * 18 * depth;
 
 
-                /*
-                 * translate est utilisé au lieu de transform,
-                 * pour ne pas écraser les transforms CSS
-                 * existants.
-                 */
+                
+
+
+
+
 
                 layer.style.translate =
                     `${moveX}px ${moveY}px`;
@@ -1793,9 +1793,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-    /* ======================================================
-       ACCUEIL — MUSIQUE
-       ====================================================== */
+    
+
+
 
     const audio =
         document.querySelector("#home-audio");
@@ -1807,11 +1807,11 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (audio) {
 
-        /*
-         * TRÈS FAIBLE.
-         *
-         * 0.03 = 3 % du volume maximal.
-         */
+        
+
+
+
+
 
         audio.volume = 0.03;
 
@@ -1826,12 +1826,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
             catch {
 
-                /*
-                 * Le navigateur refuse l'autoplay sonore.
-                 *
-                 * Le premier geste de l'utilisateur
-                 * lancera alors la musique.
-                 */
+                
+
+
+
+
+
 
                 const unlockAudio = async () => {
 
@@ -1876,9 +1876,9 @@ document.addEventListener("DOMContentLoaded", () => {
         tryAutoplay();
 
 
-        /* ==================================================
-           BOUTON SOUND
-           ================================================== */
+        
+
+
 
         soundButton?.addEventListener("click", async (event) => {
 
@@ -1943,24 +1943,24 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
 
-    /* ======================================================
-       MUSIQUE
-       ====================================================== */
+    
+
+
 
     if (audio) {
 
-        /*
-         * Faible volume.
-         */
+        
+
+
 
         audio.volume = 0.035;
 
     }
 
 
-    /* ======================================================
-       MOTS REBONDISSANTS
-       ====================================================== */
+    
+
+
 
     const wordElements =
         [...trip.querySelectorAll(".trip-word")];
@@ -2009,9 +2009,9 @@ document.addEventListener("DOMContentLoaded", () => {
                     rect.height;
 
 
-                /*
-                 * Répartition de départ.
-                 */
+                
+
+
 
                 const x =
                     random(
@@ -2033,12 +2033,12 @@ document.addEventListener("DOMContentLoaded", () => {
                     );
 
 
-                /*
-                 * Chaque mot a sa propre vitesse.
-                 *
-                 * Certains sont assez lents,
-                 * d'autres clairement plus débiles.
-                 */
+                
+
+
+
+
+
 
                 let speed =
                     random(22, 62);
@@ -2086,9 +2086,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
     }
 
-    /* ==========================================================
-       PHRASE ERRATIQUE — CHENILLE
-       ========================================================== */
+    
+
+
 
     const sentence =
         trip.querySelector("[data-trip-sentence]");
@@ -2103,12 +2103,12 @@ document.addEventListener("DOMContentLoaded", () => {
     let sentenceLastTime = 0;
     let sentenceAnimation = null;
 
-    /* ==========================================================
-   FANTÔMES DE LA CHENILLE
+    
 
-   Ce système est totalement indépendant du moteur
-   de déplacement de la phrase.
-   ========================================================== */
+
+
+
+
 
 let sentenceGhosts = [];
 let sentenceGhostFrame = null;
@@ -2118,10 +2118,10 @@ const sentenceGhostHistoryLength = 90;
 
 let activeSentenceGhosts = 0;
 
-/*
- * Horloge du crash : on lit directement l'animation CSS de
- * .home-crash-clock. Aucun setInterval indépendant, donc aucune dérive.
- */
+
+
+
+
 const crashClock =
     trip.querySelector("[data-home-crash-clock]");
 
@@ -2167,12 +2167,12 @@ const spamClickThreshold = 7;
 const spamClickWindow = 1400;
 
 
-/* ==========================================================
-   AUDIO — IMPACT SYNTHÉTISÉ
-   Aucun fichier crash.mp3 nécessaire.
-   Le contexte est créé depuis le clic PLAY, donc le navigateur
-   autorise ensuite les impacts.
-   ========================================================== */
+
+
+
+
+
+
 
 function prepareCrashAudio() {
 
@@ -2207,9 +2207,9 @@ function playCrashSound() {
 
     const now = ctx.currentTime;
 
-    /*
-     * Coup grave.
-     */
+    
+
+
     const impact =
         ctx.createOscillator();
 
@@ -2239,9 +2239,9 @@ function playCrashSound() {
     impact.stop(now + .55);
 
 
-    /*
-     * Bruit numérique / déchirure.
-     */
+    
+
+
     const duration = .62;
 
     const buffer =
@@ -2301,9 +2301,9 @@ function playCrashSound() {
 }
 
 
-/* ==========================================================
-   CRASH TEMPORAIRE — LE GRAND SPECTACLE
-   ========================================================== */
+
+
+
 
 function triggerCrashSpectacle() {
 
@@ -2313,9 +2313,9 @@ function triggerCrashSpectacle() {
 
     crashCount++;
 
-    /*
-     * Les déchirures sont différentes à chaque crise.
-     */
+    
+
+
     if (crashTears) {
 
         crashTears.innerHTML = "";
@@ -2369,10 +2369,10 @@ function triggerCrashSpectacle() {
         }
     }
 
-    /*
-     * Retirer puis remettre la classe force le redémarrage
-     * de toutes les animations CSS du crash.
-     */
+    
+
+
+
     crashSpectacle.classList.remove("is-crashing");
     trip.classList.remove("crash-hit");
 
@@ -2391,11 +2391,11 @@ function triggerCrashSpectacle() {
 }
 
 
-/* ==========================================================
-   CICATRICE PERMANENTE
-   Exactement UN nouveau bug par crash.
-   Rien n'est supprimé : accumulation volontairement infinie.
-   ========================================================== */
+
+
+
+
+
 
 function spawnPermanentCorruption() {
 
@@ -2484,9 +2484,9 @@ const height =
 
 
 
-/* ==========================================================
-   ALERTE ANTI-SPAM
-   ========================================================== */
+
+
+
 
 function startWarningTone() {
 
@@ -2510,9 +2510,9 @@ function startWarningTone() {
     oscillator.type = "sine";
     oscillator.frequency.value = 1180;
 
-    /*
-     * Volontairement bas : désagréable, mais pas assourdissant.
-     */
+    
+
+
     gain.gain.value = .018;
 
     oscillator.connect(gain);
@@ -2581,9 +2581,9 @@ function openHurtWarning() {
     hurtWarningOpen = true;
     hurtScreamerRunning = false;
 
-    /*
-     * On mémorise l'état de la musique puis on la coupe.
-     */
+    
+
+
     hurtMusicWasPlaying =
         Boolean(audio && !audio.paused);
 
@@ -2591,9 +2591,9 @@ function openHurtWarning() {
         audio.pause();
     }
 
-    /*
-     * Le popup est au-dessus de tout et bloque les interactions.
-     */
+    
+
+
     hurtWarning.classList.add("is-open");
     hurtWarning.classList.remove("is-screaming");
     hurtWarning.setAttribute("aria-hidden", "false");
@@ -2655,10 +2655,10 @@ function triggerHurtScreamer() {
         return;
     }
 
-    /*
-     * À partir d'ici, la page est condamnée jusqu'au refresh.
-     * Aucun timeout, aucun retour à l'accueil, aucune reprise audio.
-     */
+    
+
+
+
     hurtScreamerRunning = true;
 
     stopWarningTone();
@@ -2675,10 +2675,10 @@ function triggerHurtScreamer() {
         "hurt-terminal-lock"
     );
 
-    /*
-     * On neutralise les contrôles de l'overlay.
-     * Le seul moyen de sortir est désormais de recharger la page.
-     */
+    
+
+
+
     hurtSorryButton?.setAttribute(
         "disabled",
         ""
@@ -2723,9 +2723,9 @@ document.addEventListener(
             return;
         }
 
-        /*
-         * Pas d'Escape : l'utilisateur doit répondre.
-         */
+        
+
+
         if (event.key === "Escape") {
             event.preventDefault();
         }
@@ -2733,9 +2733,9 @@ document.addEventListener(
 );
 
 
-/* ==========================================================
-   UNE CRISE = son + spectacle + cicatrice
-   ========================================================== */
+
+
+
 
 function triggerFullCrash() {
 
@@ -2752,10 +2752,10 @@ document.addEventListener("click", event => {
         return;
     }
 
-    /*
-     * Pendant l'avertissement, aucun clic ne doit alimenter
-     * le système de crash derrière le popup.
-     */
+    
+
+
+
     if (hurtWarningOpen) {
         return;
     }
@@ -2766,17 +2766,17 @@ document.addEventListener("click", event => {
         return;
     }
 
-    /*
-     * Chaque clic continue à abîmer l'écran.
-     */
+    
+
+
     spawnPermanentCorruption();
 
 
-    /* ------------------------------------------------------
-       DÉTECTION DU SPAM
+    
 
-       7 clics dans une fenêtre de 1,4 seconde.
-       ------------------------------------------------------ */
+
+
+
 
     const now = performance.now();
 
@@ -2793,10 +2793,10 @@ document.addEventListener("click", event => {
         spamClickTimes.length >= spamClickThreshold
     ) {
 
-        /*
-         * Le clic qui franchit le seuil ouvre immédiatement
-         * l'avertissement. Pas de nouveau flash derrière.
-         */
+        
+
+
+
         openHurtWarning();
 
         spamClickTimes.length = 0;
@@ -2805,10 +2805,10 @@ document.addEventListener("click", event => {
     }
 
 
-    /*
-     * Le gros spectacle a son mini cooldown,
-     * mais chaque clic a déjà laissé sa cicatrice.
-     */
+    
+
+
+
     if (clickCrashLocked) {
         return;
     }
@@ -2869,11 +2869,11 @@ function updateSentenceGhostCrash() {
         return;
     }
 
-    /*
-     * Le crash CSS commence à 84 % du cycle de 10 secondes.
-     * On utilise la vraie position temporelle de CETTE animation CSS,
-     * donc le fantôme apparaît sur le crash, sans deuxième horloge JS.
-     */
+    
+
+
+
+
     const phase =
         ((currentTime % 10000) + 10000) % 10000;
 
@@ -2912,11 +2912,11 @@ function updateSentenceGhostCrash() {
 
         sentenceParts = sentenceElements.map((element, index) => {
 
-            /*
-             * IMPORTANT : on mesure la largeur naturelle du mot.
-             * Les mots cachés restent en visibility:hidden et non
-             * display:none, donc leur largeur reste mesurable.
-             */
+            
+
+
+
+
             const rect = element.getBoundingClientRect();
 
             return {
@@ -2932,11 +2932,11 @@ function updateSentenceGhostCrash() {
             };
         });
 
-        /*
-         * Chaque mot suit le précédent selon la distance entre
-         * leurs CENTRES : moitié du mot précédent + espace +
-         * moitié du mot actuel. Aucun empilement artificiel.
-         */
+        
+
+
+
+
         let accumulatedDistance = 0;
 
         sentenceParts.forEach((part, index) => {
@@ -2964,12 +2964,12 @@ function updateSentenceGhostCrash() {
         sentenceParts[0].vy =
             Math.sin(sentenceAngle) * sentenceSpeed;
 
-        /*
-         * Une seule origine. L'historique n'est PAS tronqué :
-         * la phrase n'est créée qu'une fois et représente quelques
-         * milliers de points au maximum, ce qui évite surtout de
-         * perdre la queue de la chenille.
-         */
+        
+
+
+
+
+
         sentenceHistory = [{
             x: startX,
             y: startY,
@@ -2978,9 +2978,9 @@ function updateSentenceGhostCrash() {
         }];
     }
 
-    /* ==========================================================
-   CRÉATION DES FANTÔMES
-   ========================================================== */
+    
+
+
 
 function createSentenceGhosts() {
 
@@ -2992,10 +2992,10 @@ function createSentenceGhosts() {
     }
 
 
-    /*
-     * Si la fonction est rappelée après un resize,
-     * on supprime les anciens fantômes.
-     */
+    
+
+
+
 
     sentence
         .querySelectorAll(".sentence-ghost")
@@ -3013,9 +3013,9 @@ function createSentenceGhosts() {
             const ghosts = [];
 
 
-            /*
-             * Trois copies du même mot.
-             */
+            
+
+
 
             for (
     let level = 1;
@@ -3067,12 +3067,12 @@ function createSentenceGhosts() {
 
                 ghosts,
 
-                /*
-                 * Historique VISUEL uniquement.
+                
 
-                 * Aucun rapport avec sentenceHistory
-                 * qui contrôle la vraie chenille.
-                 */
+
+
+
+
 
                 history: []
 
@@ -3083,20 +3083,20 @@ function createSentenceGhosts() {
 
 }
 
-/* ==========================================================
-   ANIMATION DES FANTÔMES
 
-   IMPORTANT :
-   on LIT simplement le transform du vrai mot.
 
-   On ne modifie jamais :
-   - x
-   - y
-   - sentenceHistory
-   - followDistance
-   - sentenceAngle
-   - les collisions
-   ========================================================== */
+
+
+
+
+
+
+
+
+
+
+
+
 
 function animateSentenceGhosts() {
 
@@ -3121,9 +3121,9 @@ function animateSentenceGhosts() {
                 group.source;
 
 
-            /*
-             * Le mot véritable n'est pas encore né.
-             */
+            
+
+
 
             const hidden =
                 source.classList.contains(
@@ -3144,11 +3144,11 @@ function animateSentenceGhosts() {
                 );
 
 
-                /*
-                 * On vide aussi sa mémoire afin qu'il
-                 * ne laisse pas une vieille traînée
-                 * lorsqu'il naîtra.
-                 */
+                
+
+
+
+
 
                 group.history.length = 0;
 
@@ -3157,12 +3157,12 @@ function animateSentenceGhosts() {
             }
 
 
-            /*
-             * Le transform a déjà été calculé
-             * par animateSentence().
-             *
-             * Nous ne faisons que le photographier.
-             */
+            
+
+
+
+
+
 
             const currentTransform =
                 source.style.transform;
@@ -3188,13 +3188,13 @@ function animateSentenceGhosts() {
             }
 
 
-            /*
-             * Retards différents.
-             *
-             * Ghost 1 = récent
-             * Ghost 2 = plus ancien
-             * Ghost 3 = encore plus ancien
-             */
+            
+
+
+
+
+
+
 
             const delays = [
     4,
@@ -3214,10 +3214,10 @@ function animateSentenceGhosts() {
                     const historyIndex =
                         delays[ghostIndex];
 
-                        /*
- * Ce fantôme n'a pas encore été
- * débloqué par un crash.
- */
+                        
+
+
+
 
 if (
     ghostIndex >= activeSentenceGhosts
@@ -3237,10 +3237,10 @@ if (
                         ];
 
 
-                    /*
-                     * Pas encore suffisamment
-                     * d'historique.
-                     */
+                    
+
+
+
 
                     if (!oldTransform) {
 
@@ -3278,12 +3278,12 @@ if (
 
     function findSentencePoint(distance) {
 
-        /*
-         * sentenceHistory est stocké du plus récent au plus ancien.
-         * On cherche les deux points qui encadrent la distance voulue
-         * et on interpole entre eux. Cela évite les sauts et surtout
-         * les mots qui se retrouvent tous au même point de secours.
-         */
+        
+
+
+
+
+
         for (let i = 0; i < sentenceHistory.length - 1; i++) {
 
             const newer = sentenceHistory[i];
@@ -3332,9 +3332,9 @@ if (
         const head = sentenceParts[0];
 
 
-        /* ------------------------------------------------------
-           VIRAGES : rares et progressifs
-           ------------------------------------------------------ */
+        
+
+
 
         if (time >= nextSentenceTurn) {
 
@@ -3358,9 +3358,9 @@ if (
             angleDifference * Math.min(1, delta * 1.8);
 
 
-        /* ------------------------------------------------------
-           VITESSE
-           ------------------------------------------------------ */
+        
+
+
 
         const breathingSpeed =
             sentenceSpeed
@@ -3373,9 +3373,9 @@ if (
         head.y += head.vy * delta;
 
 
-        /* ------------------------------------------------------
-           REBONDS PROPRES
-           ------------------------------------------------------ */
+        
+
+
 
         let bounced = false;
 
@@ -3407,9 +3407,9 @@ if (
         }
 
 
-        /* ------------------------------------------------------
-           HISTORIQUE DE DISTANCE
-           ------------------------------------------------------ */
+        
+
+
 
         const previousPoint = sentenceHistory[0];
 
@@ -3432,19 +3432,19 @@ if (
         });
 
 
-        /* ------------------------------------------------------
-           POSITION DE CHAQUE SEGMENT
-           ------------------------------------------------------ */
+        
+
+
 
         sentenceParts.forEach((part, index) => {
 
             const desiredDistance =
                 totalDistance - part.followDistance;
 
-            /*
-             * Le mot n'est pas encore né : il attend simplement
-             * que la tête ait parcouru assez de chemin.
-             */
+            
+
+
+
             if (desiredDistance < 0) {
 
                 if (!part.visible) {
@@ -3456,11 +3456,11 @@ if (
 
             const target = findSentencePoint(desiredDistance);
 
-            /*
-             * Si le point n'existe pas encore, on attend.
-             * Surtout : aucun fallback vers (0,0) ou vers le plus
-             * vieux point, donc aucun paquet de mots dans un coin.
-             */
+            
+
+
+
+
             if (!target) return;
 
             if (!part.visible) {
@@ -3524,9 +3524,9 @@ if (
             requestAnimationFrame(animateSentence);
     }
 
-    /* ======================================================
-       ANIMATION
-       ====================================================== */
+    
+
+
 
     function animateWords(time) {
 
@@ -3540,10 +3540,10 @@ if (
         }
 
 
-        /*
-         * On limite delta pour éviter qu'un mot
-         * traverse l'écran si l'onglet a été inactif.
-         */
+        
+
+
+
 
         const delta =
             Math.min(
@@ -3576,9 +3576,9 @@ if (
                 * delta;
 
 
-            /* ==============================================
-               COLLISION GAUCHE / DROITE
-               ============================================== */
+            
+
+
 
             if (word.x <= 0) {
 
@@ -3605,9 +3605,9 @@ if (
             }
 
 
-            /* ==============================================
-               COLLISION HAUT / BAS
-               ============================================== */
+            
+
+
 
             if (word.y <= 0) {
 
@@ -3634,9 +3634,9 @@ if (
             }
 
 
-            /* ==============================================
-               AFFICHAGE
-               ============================================== */
+            
+
+
 
             word.element.style.transform =
                 `
@@ -3661,17 +3661,17 @@ if (
     }
 
 
-    /* ======================================================
-       PLAY
-       ====================================================== */
+    
+
+
 
     playButton.addEventListener(
         "click",
         async () => {
 
-            /*
-             * Autorise le futur son des crashs depuis ce geste utilisateur.
-             */
+            
+
+
             prepareCrashAudio();
 
             if (
@@ -3682,14 +3682,14 @@ if (
             }
 
 
-            /*
-             * IMPORTANT :
-             *
-             * audio.play() est directement appelé
-             * depuis le clic.
-             *
-             * Donc le navigateur autorise le son.
-             */
+            
+
+
+
+
+
+
+
 
             if (audio) {
 
@@ -3711,9 +3711,9 @@ if (
             }
 
 
-            /*
-             * On révèle la scène.
-             */
+            
+
+
 
             gate.classList.add(
                 "started"
@@ -3731,10 +3731,10 @@ if (
             );
 
 
-            /*
-             * On attend que la scène soit visible
-             * pour mesurer correctement les mots.
-             */
+            
+
+
+
 
             requestAnimationFrame(() => {
 
@@ -3774,9 +3774,9 @@ sentenceGhostFrame =
     );
 
 
-    /* ======================================================
-       REDIMENSIONNEMENT
-       ====================================================== */
+    
+
+
 
     window.addEventListener(
         "resize",

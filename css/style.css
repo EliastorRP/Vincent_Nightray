@@ -1,6 +1,4 @@
-/* =========================
-   BASE
-   ========================= */
+
 
    @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;600;700;800&display=swap');
 
@@ -78,9 +76,7 @@ body {
         overdose-background 18s ease-in-out infinite alternate;
 }
 
-/* =========================
-   FOND HALLUCINATOIRE
-   ========================= */
+
 
 body::before {
     content: "";
@@ -121,9 +117,7 @@ body::before {
 
 @keyframes critical-trip {
 
-    /* =========================================
-       ÉTAT NORMAL
-       ========================================= */
+    
 
     0%,
     83%,
@@ -142,9 +136,7 @@ body::before {
     }
 
 
-    /* =========================================
-       PREMIER DÉCROCHAGE
-       ========================================= */
+    
 
     84% {
         opacity: .8;
@@ -161,7 +153,7 @@ body::before {
     }
 
 
-    /* COUP VIOLENT */
+    
 
     85% {
         opacity: 1;
@@ -183,7 +175,7 @@ body::before {
     }
 
 
-    /* FLASH TOXIQUE */
+    
 
     86% {
         opacity: 1;
@@ -205,7 +197,7 @@ body::before {
     }
 
 
-    /* QUASI BLACKOUT */
+    
 
     87% {
         opacity: 1;
@@ -224,7 +216,7 @@ body::before {
     }
 
 
-    /* RETOUR ROUGE BRUTAL */
+    
 
     88% {
         opacity: 1;
@@ -245,7 +237,7 @@ body::before {
     }
 
 
-    /* VIOLET / BLEU MALADE */
+    
 
     89% {
         opacity: .95;
@@ -266,9 +258,7 @@ body::before {
     }
 
 
-    /* =========================================
-       LE FOND SE DÉSINTÈGRE
-       ========================================= */
+    
 
     90% {
         opacity: 1;
@@ -290,7 +280,7 @@ body::before {
     }
 
 
-    /* FLASH PRESQUE BLANC */
+    
 
     91% {
         opacity: .95;
@@ -310,7 +300,7 @@ body::before {
     }
 
 
-    /* BLACKOUT SEC */
+    
 
     92% {
         opacity: 1;
@@ -329,9 +319,7 @@ body::before {
     }
 
 
-    /* =========================================
-       DEUXIÈME VAGUE
-       ========================================= */
+    
 
     93% {
         opacity: 1;
@@ -373,7 +361,7 @@ body::before {
     }
 
 
-    /* MICRO BLACKOUT */
+    
 
     95% {
         opacity: 1;
@@ -392,7 +380,7 @@ body::before {
     }
 
 
-    /* DERNIÈRE GROSSE DÉCHARGE */
+    
 
     96% {
         opacity: 1;
@@ -413,7 +401,7 @@ body::before {
     }
 
 
-    /* LE SIGNAL ESSAIE DE REVENIR */
+    
 
     97% {
         opacity: .8;
@@ -445,7 +433,7 @@ body::before {
     }
 
 
-    /* PETIT DERNIER BUG */
+    
 
     99% {
         opacity: .35;
@@ -610,9 +598,7 @@ body::after {
 }
 
 
-/* =========================
-   NAVIGATION
-   ========================= */
+
 
 nav {
     position: fixed;
@@ -673,9 +659,7 @@ nav a:hover {
 }
 
 
-/* =========================
-   CONTENU
-   ========================= */
+
 
 main {
     width: calc(100% - 260px);
@@ -710,9 +694,7 @@ p {
 }
 
 
-/* =========================
-   TITRES
-   ========================= */
+
 
    
 h1,
@@ -746,9 +728,7 @@ h1 {
 }
 
 
-/* =========================
-   SELECTION
-   ========================= */
+
 
 ::selection {
     background: #a900ff;
@@ -756,9 +736,7 @@ h1 {
 }
 
 
-/* =========================
-   SCROLLBAR
-   ========================= */
+
 
 ::-webkit-scrollbar {
     width: 7px;
@@ -777,22 +755,16 @@ h1 {
 }
 
 
-/* =========================
-   ANIMATIONS
-   ========================= */
 
 
-/* ==========================================================
-   PAGE IDENTITÉ
-   ========================================================== */
+
+
 
 .identity-page {
     max-width: none;
 }
 
-/* -------------------------
-   HEADER
-   ------------------------- */
+
 
 .identity-header {
     position: relative;
@@ -842,9 +814,7 @@ h1 {
 }
 
 
-/* -------------------------
-   CARTE IDENTITÉ
-   ------------------------- */
+
 
 .identity-card {
     display: grid;
@@ -861,7 +831,7 @@ h1 {
 }
 
 
-/* PORTRAIT */
+
 
 .identity-portrait {
     position: relative;
@@ -938,7 +908,7 @@ h1 {
 }
 
 
-/* INFORMATIONS */
+
 
 .identity-information {
     display: flex;
@@ -992,9 +962,7 @@ h1 {
 }
 
 
-/* ==========================================================
-   TITRES DE SECTIONS
-   ========================================================== */
+
 
 .section-heading {
     display: flex;
@@ -1029,9 +997,7 @@ h1 {
 }
 
 
-/* ==========================================================
-   MUSIQUE
-   ========================================================== */
+
 
 .sound-section {
     margin-bottom: 180px;
@@ -1141,16 +1107,14 @@ h1 {
 }
 
 
-/* Battle Theme */
+
 
 .sound-item.battle .sound-type {
     color: #ff005a;
 }
 
 
-/* ==========================================================
-   RÉPUTATION
-   ========================================================== */
+
 
 .reputation-section {
     width: 100%;
@@ -1227,9 +1191,7 @@ h1 {
 }
 
 
-/* ==========================================================
-   ANIMATIONS
-   ========================================================== */
+
 
 @keyframes title-breathe {
 
@@ -1257,9 +1219,7 @@ h1 {
 }
 
 
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
+
 
    @media (max-width: 900px) {
 
@@ -1308,23 +1268,15 @@ h1 {
 
 }
 
-/* ==========================================================
-   EFFETS HALLUCINATOIRES — IDENTITÉ
-   Dédoublement chromatique / rémanence / instabilité
-   ========================================================== */
 
 
-/* ==========================================================
-   1. TITRE — ABERRATION CHROMATIQUE
-   ========================================================== */
+
+
 
 .identity-header h1 {
     position: relative;
 
-    /*
-       Les ombres rouge / cyan / violet donnent l'impression
-       que les canaux de couleur ne sont plus alignés.
-    */
+    
 
     text-shadow:
         -4px 0 rgba(255, 0, 70, 0.55),
@@ -1337,10 +1289,7 @@ h1 {
 }
 
 
-/*
-   Une courte anomalie survient de temps en temps.
-   Le titre reste calme la majorité du temps.
-*/
+
 
 @keyframes title-drift {
 
@@ -1385,9 +1334,7 @@ h1 {
 }
 
 
-/* ==========================================================
-   2. NAVIGATION — DÉDOUBLEMENT AU SURVOL
-   ========================================================== */
+
 
 nav a {
     position: relative;
@@ -1402,10 +1349,7 @@ nav a {
 }
 
 
-/*
-   État normal :
-   une aberration presque imperceptible.
-*/
+
 
 nav a {
     text-shadow:
@@ -1414,10 +1358,7 @@ nav a {
 }
 
 
-/*
-   Survol :
-   les canaux semblent se séparer.
-*/
+
 
 nav a:hover {
     transform:
@@ -1433,10 +1374,7 @@ nav a:hover {
 }
 
 
-/*
-   La page actuellement sélectionnée reste légèrement
-   "contaminée", même sans survol.
-*/
+
 
 nav a.active {
     color: #ffffff;
@@ -1473,9 +1411,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   3. INFORMATIONS — LÉGER DÉCALAGE
-   ========================================================== */
+
 
 .info-row {
     position: relative;
@@ -1489,10 +1425,7 @@ nav a.active {
 }
 
 
-/*
-   On décale légèrement les animations de chaque ligne.
-   Elles ne bougent donc pas toutes ensemble.
-*/
+
 
 .info-row:nth-child(2n) {
     animation-delay: -2.3s;
@@ -1540,9 +1473,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   4. INFORMATIONS — SURVOL
-   ========================================================== */
+
 
 .info-row:hover {
     transform:
@@ -1561,7 +1492,7 @@ nav a.active {
 }
 
 
-/* LABEL */
+
 
 .info-label {
     transition:
@@ -1578,7 +1509,7 @@ nav a.active {
 }
 
 
-/* VALEUR */
+
 
 .info-value {
     transition:
@@ -1595,19 +1526,14 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   5. RÉMANENCE DU PORTRAIT
-   ========================================================== */
+
 
 .portrait-frame {
     isolation: isolate;
 }
 
 
-/*
-   On crée une sorte d'aura chromatique derrière
-   l'image lorsqu'on la survole.
-*/
+
 
 .portrait-frame::after {
     content: "";
@@ -1644,9 +1570,7 @@ nav a.active {
 }
 
 
-/*
-   L'image semble laisser une petite traînée derrière elle.
-*/
+
 
 .portrait-frame:hover img {
     animation: portrait-afterimage 2.8s ease-in-out infinite;
@@ -1698,9 +1622,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   6. PETITE INSTABILITÉ DU "01 / IDENTITÉ"
-   ========================================================== */
+
 
 .page-number {
     text-shadow:
@@ -1734,9 +1656,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   7. LIGNES — LUEUR QUI TRAVERSE PARFOIS
-   ========================================================== */
+
 
 .info-row::after {
     content: "";
@@ -1771,10 +1691,7 @@ nav a.active {
     opacity: 0.65;
 }
 
-/* ==========================================================
-   CRASH DES IMAGES
-   Synchronisé avec le crash général : 10 secondes
-   ========================================================== */
+
 
 .portrait-frame {
     animation:
@@ -1783,7 +1700,7 @@ nav a.active {
 
 @keyframes image-critical-trip {
 
-    /* NORMAL */
+    
 
     0%,
     83%,
@@ -1803,7 +1720,7 @@ nav a.active {
     }
 
 
-    /* PREMIER DÉCROCHAGE */
+    
 
     84% {
         transform:
@@ -1817,7 +1734,7 @@ nav a.active {
     }
 
 
-    /* ROUGE — IMAGE QUI SAUTE */
+    
 
     85% {
         transform:
@@ -1837,7 +1754,7 @@ nav a.active {
     }
 
 
-    /* VERT TOXIQUE */
+    
 
     86% {
         transform:
@@ -1857,7 +1774,7 @@ nav a.active {
     }
 
 
-    /* BLACKOUT */
+    
 
     87% {
         transform:
@@ -1874,7 +1791,7 @@ nav a.active {
     }
 
 
-    /* GROS DÉCALAGE CHROMATIQUE */
+    
 
     88% {
         transform:
@@ -1895,7 +1812,7 @@ nav a.active {
     }
 
 
-    /* ÉCRASEMENT */
+    
 
     89% {
         transform:
@@ -1930,7 +1847,7 @@ nav a.active {
     }
 
 
-    /* FLASH */
+    
 
     91% {
         transform:
@@ -1947,7 +1864,7 @@ nav a.active {
     }
 
 
-    /* BLACKOUT SEC */
+    
 
     92% {
         transform:
@@ -1961,7 +1878,7 @@ nav a.active {
     }
 
 
-    /* DEUXIÈME VAGUE */
+    
 
     93% {
         transform:
@@ -2000,7 +1917,7 @@ nav a.active {
     }
 
 
-    /* BLACKOUT TOTAL */
+    
 
     95% {
         transform:
@@ -2017,7 +1934,7 @@ nav a.active {
     }
 
 
-    /* DERNIÈRE DÉCHARGE */
+    
 
     96% {
         transform:
@@ -2037,7 +1954,7 @@ nav a.active {
     }
 
 
-    /* RETOUR PROGRESSIF */
+    
 
     97% {
         transform:
@@ -2099,9 +2016,7 @@ nav a.active {
         image-critical-trip 10s steps(1, end) infinite;
 }
 
-/* ==========================================================
-   MENTALITÉ — INTRODUCTION
-   ========================================================== */
+
 
 .mentality-page {
     max-width: none;
@@ -2113,9 +2028,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .mentality-header {
     margin-bottom: 65px;
@@ -2148,9 +2061,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   LECTEUR AUDIO
-   ========================================================== */
+
 
 .mental-audio-player {
     width: min(720px, 100%);
@@ -2184,7 +2095,7 @@ nav a.active {
 }
 
 
-/* petite ligne malade */
+
 
 .mental-audio-player::before {
     content: "";
@@ -2278,7 +2189,7 @@ nav a.active {
 }
 
 
-/* BARRES */
+
 
 .audio-progress,
 .volume-slider {
@@ -2343,9 +2254,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .mentality-prose {
     width: 100%;
@@ -2360,7 +2269,7 @@ nav a.active {
 }
 
 
-/* nécessaire avec le float */
+
 
 .mentality-prose::after {
     content: "";
@@ -2379,9 +2288,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGE DANS LE TEXTE
-   ========================================================== */
+
 
 .mentality-floating-image {
     float: left;
@@ -2461,9 +2368,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PETITE DÉRIVE DU TEXTE
-   ========================================================== */
+
 
 .mentality-prose p:nth-of-type(3) {
     color:
@@ -2481,9 +2386,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
+
 
 @media (max-width: 800px) {
 
@@ -2517,9 +2420,7 @@ nav a.active {
     }
 }
 
-/* ==========================================================
-   MENTALITÉ — AFFINITÉS / RÉPULSIONS
-   ========================================================== */
+
 
 .preferences-section {
     width: 100%;
@@ -2533,9 +2434,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TITRE
-   ========================================================== */
+
 
 .preferences-header {
     position: relative;
@@ -2624,9 +2523,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   AXE CENTRAL
-   ========================================================== */
+
 
 .preference-axis {
     width: 100%;
@@ -2672,9 +2569,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ENTRÉES
-   ========================================================== */
+
 
 .preference-entry {
     width:
@@ -2691,7 +2586,7 @@ nav a.active {
 }
 
 
-/* impairs = gauche */
+
 
 .preference-entry:nth-of-type(odd) {
     margin-right:
@@ -2702,7 +2597,7 @@ nav a.active {
 }
 
 
-/* pairs = droite */
+
 
 .preference-entry:nth-of-type(even) {
     margin-left:
@@ -2713,7 +2608,7 @@ nav a.active {
 }
 
 
-/* petit décalage volontaire */
+
 
 .preference-entry:nth-of-type(2) {
     margin-top:
@@ -2726,9 +2621,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   MARQUEUR CENTRAL
-   ========================================================== */
+
 
 .preference-marker {
     position: absolute;
@@ -2763,7 +2656,7 @@ nav a.active {
 }
 
 
-/* gauche */
+
 
 .preference-entry:nth-of-type(odd)
 .preference-marker {
@@ -2773,7 +2666,7 @@ nav a.active {
 }
 
 
-/* droite */
+
 
 .preference-entry:nth-of-type(even)
 .preference-marker {
@@ -2783,7 +2676,7 @@ nav a.active {
 }
 
 
-/* AIME */
+
 
 .preference-like
 .preference-marker {
@@ -2793,7 +2686,7 @@ nav a.active {
 }
 
 
-/* N'AIME PAS */
+
 
 .preference-dislike
 .preference-marker {
@@ -2803,9 +2696,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PETITES INFORMATIONS
-   ========================================================== */
+
 
 .preference-meta {
     display: flex;
@@ -2850,9 +2741,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TITRES
-   ========================================================== */
+
 
 .preference-content h3 {
     margin:
@@ -2883,7 +2772,7 @@ nav a.active {
 }
 
 
-/* petite ligne sous le titre */
+
 
 .preference-content h3::after {
     content: "";
@@ -2920,9 +2809,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .preference-content p {
     margin: 0;
@@ -2941,7 +2828,7 @@ nav a.active {
 }
 
 
-/* première lettre */
+
 
 .preference-content p::first-letter {
     font-family:
@@ -2970,9 +2857,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   MOTS FANTÔMES
-   ========================================================== */
+
 
 .preference-ghost {
     position: absolute;
@@ -3021,9 +2906,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HOVER
-   ========================================================== */
+
 
 .preference-entry:hover {
     transform:
@@ -3047,7 +2930,7 @@ nav a.active {
 }
 
 
-/* végétal */
+
 
 .preference-like:hover
 .preference-marker {
@@ -3072,7 +2955,7 @@ nav a.active {
 }
 
 
-/* répulsion */
+
 
 .preference-dislike:hover
 .preference-marker {
@@ -3097,9 +2980,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TRANSITION ENTRE LES DEUX MOITIÉS
-   ========================================================== */
+
 
 .preference-transition {
     clear: both;
@@ -3161,9 +3042,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   UN PEU DE "RESPIRATION" / HALLUCINATION
-   ========================================================== */
+
 
 .preference-marker::after {
     content: "";
@@ -3207,9 +3086,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 900px) {
 
@@ -3282,9 +3159,7 @@ nav a.active {
 
 }
 
-/* ==========================================================
-   MENTALITÉ — BUT
-   ========================================================== */
+
 
 .purpose-section {
     width: 100%;
@@ -3304,9 +3179,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TOP LINE
-   ========================================================== */
+
 
 .purpose-topline {
     display: flex;
@@ -3329,9 +3202,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEMPS
-   ========================================================== */
+
 
 .purpose-time {
     height: 560px;
@@ -3379,7 +3250,7 @@ nav a.active {
 }
 
 
-/* petits points */
+
 
 .time-thread span {
     position: absolute;
@@ -3409,9 +3280,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ÊTRE
-   ========================================================== */
+
 
 .purpose-core {
     position: relative;
@@ -3454,7 +3323,7 @@ nav a.active {
 }
 
 
-/* copies RGB */
+
 
 .purpose-core-shadow {
     position: absolute;
@@ -3510,9 +3379,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PARAGRAPHE
-   ========================================================== */
+
 
 .purpose-body {
     width:
@@ -3559,9 +3426,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CONCLUSION
-   ========================================================== */
+
 
 .purpose-ending {
     width:
@@ -3904,9 +3769,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   MENTALITÉ — PEURS
-   ========================================================== */
+
 
 .fears-section {
     width: 100%;
@@ -3928,9 +3791,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .fears-index {
     display: flex;
@@ -3985,9 +3846,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FANTÔMES DU TITRE
-   ========================================================== */
+
 
 .fears-ghost {
     position: absolute;
@@ -4044,9 +3903,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ENTRÉES
-   ========================================================== */
+
 
 .fear-entry {
     margin-top:
@@ -4135,9 +3992,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CORPS
-   ========================================================== */
+
 
 .fear-body {
     width:
@@ -4165,9 +4020,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   SOBRIÉTÉ — MONITEUR
-   ========================================================== */
+
 
 .withdrawal-monitor {
     display: grid;
@@ -4286,9 +4139,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PHRASE CENTRALE
-   ========================================================== */
+
 
 .fear-statement {
     margin:
@@ -4350,9 +4201,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   MÉMOIRE QUI SE PERD
-   ========================================================== */
+
 
 .fear-memory-loss {
     width:
@@ -4406,9 +4255,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   AVION — ÉQUATION IMPOSSIBLE
-   ========================================================== */
+
 
 .impossible-equation {
     display: flex;
@@ -4506,9 +4353,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   QUESTION
-   ========================================================== */
+
 
 .plane-question {
     margin:
@@ -4565,9 +4410,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   BOUCLE FINALE
-   ========================================================== */
+
 
 .fear-loop {
     margin-top:
@@ -4801,9 +4644,7 @@ nav a.active {
     }
 }
 
-/* ==========================================================
-   HISTOIRE — ORIGINES
-   ========================================================== */
+
 
 .history-page {
     max-width: none;
@@ -4815,9 +4656,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .history-header {
     min-height: 70vh;
@@ -4890,9 +4729,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PARENTS
-   ========================================================== */
+
 
 .parents-grid {
     display: grid;
@@ -4909,7 +4746,7 @@ nav a.active {
 }
 
 
-/* ligne centrale */
+
 
 .parents-grid::before {
     content: "";
@@ -4934,9 +4771,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PARENT
-   ========================================================== */
+
 
 .parent {
     min-width: 0;
@@ -5001,9 +4836,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PORTRAITS
-   ========================================================== */
+
 
 .parent-portrait {
     width: 100%;
@@ -5061,7 +4894,7 @@ nav a.active {
 }
 
 
-/* voile archive */
+
 
 .parent-portrait::before {
     content: "";
@@ -5103,9 +4936,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTES DES PARENTS
-   ========================================================== */
+
 
 .parent-text {
     position: relative;
@@ -5158,9 +4989,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CONVERGENCE
-   ========================================================== */
+
 
 .bloodline-convergence {
     height: 230px;
@@ -5212,7 +5041,7 @@ nav a.active {
 }
 
 
-/* petite descente vers les enfants */
+
 
 .bloodline-convergence::after {
     content: "";
@@ -5234,9 +5063,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   DESCENDANCE
-   ========================================================== */
+
 
 .children-origin {
     width:
@@ -5289,9 +5116,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   LES CINQ ENFANTS
-   ========================================================== */
+
 
 .children-record {
     position: relative;
@@ -5343,7 +5168,7 @@ nav a.active {
 }
 
 
-/* petit point généalogique */
+
 
 .child-node::before {
     content: "";
@@ -5397,7 +5222,7 @@ nav a.active {
 }
 
 
-/* Vincent ressort légèrement */
+
 
 .vincent-node {
     color:
@@ -5418,9 +5243,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   NAISSANCE DE VINCENT
-   ========================================================== */
+
 
 .vincent-birth {
     width:
@@ -5537,9 +5360,7 @@ nav a.active {
         infinite;
 }
 
-/* ==========================================================
-   HISTOIRE — OST
-   ========================================================== */
+
 
 .history-ost {
     width: min(850px, 85%);
@@ -5580,8 +5401,7 @@ nav a.active {
 }
 
 
-/* on remplace la petite ligne du lecteur mentalité
-   par quelque chose de plus sombre / ancien */
+
 
 .history-audio-player::before {
     background:
@@ -5593,7 +5413,7 @@ nav a.active {
 }
 
 
-/* légère différence pour le bouton */
+
 
 .history-audio-player .audio-play:hover {
     background:
@@ -5601,7 +5421,7 @@ nav a.active {
 }
 
 
-/* la barre prend une légère teinte maladive */
+
 
 .history-audio-player
 .audio-progress::-webkit-slider-thumb,
@@ -5614,9 +5434,7 @@ nav a.active {
         rgba(120, 0, 40, .6);
 }
 
-/* ==========================================================
-   HISTOIRE — ENFANCE
-   ========================================================== */
+
 
 .childhood-section {
     width: 100%;
@@ -5632,9 +5450,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .childhood-topline {
     display: flex;
@@ -5706,7 +5522,7 @@ nav a.active {
 }
 
 
-/* gros âge à droite */
+
 
 .childhood-age {
     position: absolute;
@@ -5738,9 +5554,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   LIGNE TEMPORELLE
-   ========================================================== */
+
 
 .childhood-period {
     display: grid;
@@ -5787,9 +5601,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .childhood-opening,
 .childhood-middle,
@@ -5837,9 +5649,7 @@ nav a.active {
         rgba(255,255,255,.18);
 }
 
-/* ==========================================================
-   ENFANCE — IMAGE INTÉGRÉE AU RÉCIT
-   ========================================================== */
+
 
 .childhood-inline-memory {
     width: clamp(280px, 31vw, 430px);
@@ -5903,7 +5713,7 @@ nav a.active {
 }
 
 
-/* voile sombre */
+
 
 .childhood-inline-image::after {
     content: "";
@@ -5939,7 +5749,7 @@ nav a.active {
 }
 
 
-/* première lettre */
+
 
 .childhood-opening
 .childhood-text p:first-of-type::first-letter {
@@ -5968,9 +5778,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGE / SOUVENIR
-   ========================================================== */
+
 
 .childhood-memory {
     width:
@@ -6036,7 +5844,7 @@ nav a.active {
 }
 
 
-/* assombrit légèrement les bords */
+
 
 .childhood-memory-image::after {
     content: "";
@@ -6074,9 +5882,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CASSANDRA
-   ========================================================== */
+
 
 .childhood-middle {
     margin-top: 180px;
@@ -6108,9 +5914,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   DESCENTE / ABSENCE
-   ========================================================== */
+
 
 .childhood-descent {
     margin-top: 170px;
@@ -6179,9 +5983,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FIN
-   ========================================================== */
+
 
 .childhood-ending {
     width:
@@ -6230,9 +6032,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PHRASE FINALE
-   ========================================================== */
+
 
 .childhood-final {
     position: relative;
@@ -6291,9 +6091,7 @@ nav a.active {
         infinite;
 }
 
-/* ==========================================================
-   HISTOIRE — ADOLESCENCE
-   ========================================================== */
+
 
 .adolescence-section {
     width: 100%;
@@ -6309,9 +6107,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .adolescence-topline {
     display: flex;
@@ -6382,7 +6178,7 @@ nav a.active {
 }
 
 
-/* âge fantôme */
+
 
 .adolescence-age {
     position: absolute;
@@ -6415,9 +6211,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CHRONOLOGIE 12 → 18
-   ========================================================== */
+
 
 .adolescence-period {
     display: grid;
@@ -6497,9 +6291,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE PRINCIPAL
-   ========================================================== */
+
 
 .adolescence-story {
     width:
@@ -6544,7 +6336,7 @@ nav a.active {
 }
 
 
-/* première lettre */
+
 
 .adolescence-text > p:first-of-type::first-letter {
     float: left;
@@ -6572,9 +6364,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   REPÈRES D'ÂGE
-   ========================================================== */
+
 
 .adolescence-marker {
     display: grid;
@@ -6630,7 +6420,7 @@ nav a.active {
 }
 
 
-/* 16 ressort légèrement */
+
 
 .adolescence-marker-critical > span {
     color:
@@ -6652,9 +6442,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGE — 16 ANS
-   ========================================================== */
+
 
 .adolescence-inline-memory {
     width:
@@ -6736,9 +6524,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   18 ANS
-   ========================================================== */
+
 
 .adolescence-marker-eighteen {
     margin-top: 120px;
@@ -6751,9 +6537,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FIN / TRANSITION
-   ========================================================== */
+
 
 .adolescence-ending {
     width:
@@ -6835,9 +6619,7 @@ nav a.active {
         infinite;
 }
 
-/* ==========================================================
-   HISTOIRE — JEUNE ADULTE
-   ========================================================== */
+
 
 .young-adult-section {
     width: 100%;
@@ -6853,9 +6635,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .young-adult-topline {
     display: flex;
@@ -6956,9 +6736,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CHRONOLOGIE
-   ========================================================== */
+
 
 .young-adult-period {
     display: grid;
@@ -7003,9 +6781,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .young-adult-story {
     width:
@@ -7075,9 +6851,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGES COMMUNES
-   ========================================================== */
+
 
 .young-adult-memory {
     width:
@@ -7153,9 +6927,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGE GAËL — DROITE
-   ========================================================== */
+
 
 .memory-gael {
     float: right;
@@ -7167,9 +6939,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGE JADE — GAUCHE
-   ========================================================== */
+
 
 .memory-jade {
     float: left;
@@ -7180,9 +6950,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   REPÈRES
-   ========================================================== */
+
 
 .young-adult-marker {
     display: grid;
@@ -7239,7 +7007,7 @@ nav a.active {
 }
 
 
-/* Jade / drogue */
+
 
 .marker-poison > i {
     background:
@@ -7257,9 +7025,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CITATIONS
-   ========================================================== */
+
 
 .gael-quote,
 .jade-quote {
@@ -7315,7 +7081,7 @@ nav a.active {
 }
 
 
-/* Jade a une présence légèrement différente */
+
 
 .jade-quote {
     border-left-color:
@@ -7323,9 +7089,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CONCLUSION
-   ========================================================== */
+
 
 .young-adult-ending {
     width:
@@ -7393,9 +7157,7 @@ nav a.active {
         infinite;
 }
 
-/* ==========================================================
-   FINS DE PARTIES — ALIGNEMENT AVEC LE TEXTE
-   ========================================================== */
+
 
 .childhood-final,
 .adolescence-ending,
@@ -7409,9 +7171,7 @@ nav a.active {
     box-sizing: border-box;
 }
 
-/* ==========================================================
-   HISTOIRE — BASCULE / 27—30
-   ========================================================== */
+
 
 .turning-section {
     width: 100%;
@@ -7425,9 +7185,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .turning-topline {
     display: flex;
@@ -7514,9 +7272,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PÉRIODE
-   ========================================================== */
+
 
 .turning-period {
     display: grid;
@@ -7556,9 +7312,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   OST 02
-   ========================================================== */
+
 
 .turning-ost {
     width: min(850px, 85%);
@@ -7596,9 +7350,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .turning-story {
     width: min(1250px, 96%);
@@ -7655,9 +7407,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGES
-   ========================================================== */
+
 
 .turning-memory {
     width: clamp(280px, 29vw, 410px);
@@ -7729,7 +7479,7 @@ nav a.active {
 }
 
 
-/* première image à droite */
+
 
 .memory-paradise {
     float: right;
@@ -7740,7 +7490,7 @@ nav a.active {
 }
 
 
-/* deuxième image à gauche */
+
 
 .memory-valentin {
     float: left;
@@ -7751,9 +7501,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   MARQUEURS
-   ========================================================== */
+
 
 .turning-marker {
     display: grid;
@@ -7835,9 +7583,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PENSÉE — ALIGNÉE AU TEXTE
-   ========================================================== */
+
 
 .turning-thought {
     width: 100%;
@@ -7897,9 +7643,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CHANGEMENT DE STATUT
-   ========================================================== */
+
 
 .transformation-record {
     width: 100%;
@@ -7968,9 +7712,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FIN — ALIGNÉE AVEC LE TEXTE
-   ========================================================== */
+
 
 .turning-ending {
     width: 100%;
@@ -8157,9 +7899,7 @@ nav a.active {
     }
 }
 
-/* ==========================================================
-   HISTOIRE — PRISON / 27—32
-   ========================================================== */
+
 
 .prison-section {
     width: 100%;
@@ -8173,9 +7913,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .prison-topline {
     display: flex;
@@ -8262,9 +8000,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PÉRIODE
-   ========================================================== */
+
 
 .prison-period {
     display: grid;
@@ -8304,9 +8040,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   OST
-   ========================================================== */
+
 
 .prison-ost {
     width: min(900px, 90%);
@@ -8334,9 +8068,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   RÉCIT
-   ========================================================== */
+
 
 .prison-story {
     width: min(1250px, 96%);
@@ -8392,9 +8124,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ÉVÉNEMENTS
-   ========================================================== */
+
 
 .prison-event {
     width: 100%;
@@ -8469,9 +8199,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CONDAMNATION
-   ========================================================== */
+
 
 .prison-sentence {
     width: 100%;
@@ -8535,9 +8263,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGE UNIQUE
-   ========================================================== */
+
 
 .prison-memory {
     width: clamp(300px, 32vw, 450px);
@@ -8615,9 +8341,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   STATUT VAMPIRE
-   ========================================================== */
+
 
 .prison-status {
     width: 100%;
@@ -8685,9 +8409,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FIN
-   ========================================================== */
+
 
 .prison-ending {
     width: 100%;
@@ -8756,9 +8478,7 @@ nav a.active {
     color: rgba(255,255,255,.13);
 }
 
-/* ==========================================================
-   HISTOIRE — LIBERTÉ / 32—147
-   ========================================================== */
+
 
 .present-section {
     width: 100%;
@@ -8772,9 +8492,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .present-topline {
     display: flex;
@@ -8861,9 +8579,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PÉRIODE
-   ========================================================== */
+
 
 .present-period {
     display: grid;
@@ -8903,9 +8619,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   OST
-   ========================================================== */
+
 
 .present-ost {
     width: min(900px, 90%);
@@ -8933,9 +8647,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .present-story {
     width: min(1250px, 96%);
@@ -8991,9 +8703,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGES
-   ========================================================== */
+
 
 .present-memory {
     width: clamp(290px, 30vw, 430px);
@@ -9092,9 +8802,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   DIALOGUES FRED
-   ========================================================== */
+
 
 .fred-dialogue {
     width: 100%;
@@ -9149,9 +8857,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ÉVÉNEMENTS
-   ========================================================== */
+
 
 .present-event {
     width: 100%;
@@ -9229,13 +8935,9 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   POLAROID — TRACE DE FRED
-   ========================================================== */
 
-/* ==========================================================
-   POLAROID — DERNIÈRE TRACE DE FRED
-   ========================================================== */
+
+
 
 .fred-polaroid {
     width: 100%;
@@ -9257,7 +8959,7 @@ nav a.active {
 }
 
 
-/* petite ligne d'archive derrière l'ensemble */
+
 
 .fred-polaroid::before {
     content: "";
@@ -9283,9 +8985,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PHOTO
-   ========================================================== */
+
 
 .fred-polaroid-photo {
     position: relative;
@@ -9351,7 +9051,7 @@ nav a.active {
 }
 
 
-/* saleté / vieillissement */
+
 
 .polaroid-paper::before {
     content: "";
@@ -9384,7 +9084,7 @@ nav a.active {
 }
 
 
-/* petite inscription sous la photo */
+
 
 .polaroid-handwriting {
     position: absolute;
@@ -9407,9 +9107,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   INFORMATIONS À DROITE
-   ========================================================== */
+
 
 .fred-polaroid-info {
     position: relative;
@@ -9568,9 +9266,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PASSAGE DU TEMPS
-   ========================================================== */
+
 
 .present-time {
     width: 100%;
@@ -9625,9 +9321,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FIN DE L'HISTOIRE
-   ========================================================== */
+
 
 .present-ending {
     width: 100%;
@@ -9713,12 +9407,7 @@ nav a.active {
 
 
 
-/* ==========================================================
-   ==========================================================
-   DESCRIPTION PHYSIQUE
-   SCROLL REEL / 3D
-   ==========================================================
-   ========================================================== */
+
 
 
 .physical-page {
@@ -9726,9 +9415,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .physical-header {
     width: 100%;
@@ -9755,9 +9442,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TITRE
-   ========================================================== */
+
 
 .physical-title {
     min-height: 480px;
@@ -9841,9 +9526,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   OST
-   ========================================================== */
+
 
 .physical-ost {
     width:
@@ -9876,9 +9559,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   INTRO BOBINE
-   ========================================================== */
+
 
 .physical-reel-intro {
     width:
@@ -9924,19 +9605,14 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   LA BOBINE
-   ========================================================== */
+
 
 .physical-reel {
     width: 100%;
 
     position: relative;
 
-    /*
-        La perspective est posée sur le parent.
-        Toutes les sections tournent dans ce même espace 3D.
-    */
+    
 
     perspective: 1350px;
 
@@ -9948,9 +9624,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   UNE PORTION DE LA BOBINE
-   ========================================================== */
+
 
 .reel-section {
     width:
@@ -9966,9 +9640,7 @@ nav a.active {
 
     position: relative;
 
-    /*
-        Les variables sont contrôlées par JS.
-    */
+    
 
     --reel-rotate: 0deg;
     --reel-z: 0px;
@@ -9994,10 +9666,7 @@ nav a.active {
     opacity:
         var(--reel-opacity);
 
-    /*
-        PAS de grosse transition ici.
-        Sinon la bobine "traîne" derrière le scroll.
-    */
+    
 
     will-change:
         transform,
@@ -10012,9 +9681,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PETIT LABEL DE CHAQUE SECTION
-   ========================================================== */
+
 
 .reel-meta {
     width: 100%;
@@ -10078,9 +9745,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .reel-text {
     min-width: 0;
@@ -10108,10 +9773,7 @@ nav a.active {
 }
 
 
-/*
-    Les sections sans image sont un peu plus étroites,
-    pour éviter un énorme mur de texte.
-*/
+
 
 .reel-text-centered {
     width:
@@ -10129,9 +9791,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   SECTIONS AVEC IMAGE
-   ========================================================== */
+
 
 .reel-layout {
     display: grid;
@@ -10155,9 +9815,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGES
-   ========================================================== */
+
 
 .reel-image {
     width: 100%;
@@ -10173,10 +9831,7 @@ nav a.active {
 
     overflow: hidden;
 
-    /*
-        image-critical-trip est sur CE conteneur.
-        Pas sur img.
-    */
+    
 
     transform-style:
         preserve-3d;
@@ -10201,7 +9856,7 @@ nav a.active {
 }
 
 
-/* petite réaction au lecteur */
+
 
 .reel-image:hover img {
     transform:
@@ -10229,12 +9884,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PROFONDEUR VISUELLE
 
-   Un léger masque apparaît lorsque la section part vers
-   l'arrière. Le JS contrôle l'opacité via --reel-fade.
-   ========================================================== */
 
 .reel-section-inner::after {
     content: "";
@@ -10254,9 +9904,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PROGRESS BAR LATÉRALE
-   ========================================================== */
+
 
 .reel-progress {
     position: fixed;
@@ -10322,7 +9970,7 @@ nav a.active {
 }
 
 
-/* ligne derrière */
+
 
 .reel-progress-track::before {
     content: "";
@@ -10410,9 +10058,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CONCLUSION
-   ========================================================== */
+
 
 .physical-ending {
     width:
@@ -10501,9 +10147,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TABLETTE
-   ========================================================== */
+
 
 @media (max-width: 1050px) {
 
@@ -10542,9 +10186,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 700px) {
 
@@ -10553,7 +10195,7 @@ nav a.active {
     }
 
 
-    /* HEADER */
+    
 
     .physical-topline {
         font-size: .35rem;
@@ -10580,7 +10222,7 @@ nav a.active {
     }
 
 
-    /* OST */
+    
 
     .physical-ost {
         width: 100%;
@@ -10589,7 +10231,7 @@ nav a.active {
     }
 
 
-    /* INTRO */
+    
 
     .physical-reel-intro {
         width: 100%;
@@ -10602,7 +10244,7 @@ nav a.active {
     }
 
 
-    /* BOBINE */
+    
 
     .physical-reel {
         perspective: 1800px;
@@ -10666,14 +10308,14 @@ nav a.active {
     }
 
 
-    /* indicateur */
+    
 
     .reel-progress {
         display: none;
     }
 
 
-    /* conclusion */
+    
 
     .physical-ending {
         width: 100%;
@@ -10692,9 +10334,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ACCESSIBILITÉ — MOUVEMENTS RÉDUITS
-   ========================================================== */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -10733,20 +10373,14 @@ nav a.active {
 
 
 
-/* ==========================================================
-   ==========================================================
-   CAPACITÉS
-   ==========================================================
-   ========================================================== */
+
 
 .abilities-page {
     overflow: clip;
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .abilities-header {
     width: 100%;
@@ -10772,9 +10406,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TITRE
-   ========================================================== */
+
 
 .abilities-title {
     min-height: 520px;
@@ -10847,9 +10479,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   INTRODUCTION — VINCENT / VICTIME
-   ========================================================== */
+
 
 .bond-introduction {
     width:
@@ -10954,9 +10584,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HISTOIRE DU LIEN
-   ========================================================== */
+
 
 .ability-bond-story {
     width: 100%;
@@ -10965,9 +10593,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FIL CENTRAL
-   ========================================================== */
+
 
 .ability-thread {
     position: absolute;
@@ -11028,9 +10654,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CHAPITRES
-   ========================================================== */
+
 
 .ability-chapter {
     width: min(900px, 88%);
@@ -11044,10 +10668,7 @@ nav a.active {
 }
 
 
-/*
-   Le numéro ne participe PLUS au centrage.
-   Il flotte simplement à gauche du texte.
-*/
+
 
 .ability-chapter-marker {
     position: absolute;
@@ -11141,7 +10762,7 @@ nav a.active {
 }
 
 
-/* lettrine */
+
 
 .ability-opening::first-letter {
     float: left;
@@ -11167,7 +10788,7 @@ nav a.active {
 }
 
 
-/* petite phrase seule */
+
 
 .ability-emphasis {
     width:
@@ -11201,9 +10822,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   VISUALISATION 12H
-   ========================================================== */
+
 
 .bond-visual {
     width:
@@ -11331,9 +10950,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PETITES RÈGLES
-   ========================================================== */
+
 
 .ability-rules {
     width:
@@ -11439,9 +11056,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TROIS MORSURES
-   ========================================================== */
+
 
 .bite-progression {
     width:
@@ -11558,7 +11173,7 @@ nav a.active {
 }
 
 
-/* 1 */
+
 
 .bite-link-one .bite-wire i {
     opacity: .25;
@@ -11568,7 +11183,7 @@ nav a.active {
 }
 
 
-/* 2 */
+
 
 .bite-link-two .bite-wire i {
     height: 2px;
@@ -11585,7 +11200,7 @@ nav a.active {
 }
 
 
-/* 3 */
+
 
 .bite-link-three .bite-wire i {
     height: 3px;
@@ -11619,9 +11234,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   GRANDE RÉVÉLATION
-   ========================================================== */
+
 
 .reciprocal-reveal {
     width:
@@ -11692,7 +11305,7 @@ nav a.active {
 }
 
 
-/* symbole */
+
 
 .reciprocal-symbol {
     width:
@@ -11804,9 +11417,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   RÈGLES MIROIR
-   ========================================================== */
+
 
 .reciprocal-rules {
     width:
@@ -11933,9 +11544,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CONCLUSION
-   ========================================================== */
+
 
 .ability-conclusion {
     margin-bottom: 110px;
@@ -11959,9 +11568,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   LIEN BRISÉ
-   ========================================================== */
+
 
 .broken-bond {
     width:
@@ -12044,9 +11651,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PROCHAINE PARTIE
-   ========================================================== */
+
 
 .ability-next-part {
     width:
@@ -12094,9 +11699,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ÉTAT ACTIF AU SCROLL
-   ========================================================== */
+
 
 [data-bond-stage] {
     transition:
@@ -12109,9 +11712,7 @@ nav a.active {
 }
 
 
-/*
-   Le JS ajoute cette classe uniquement sur les visualisations.
-*/
+
 
 .bite-stage.is-reached
 .bite-wire i {
@@ -12128,9 +11729,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
+
 
 @media (max-width: 800px) {
 
@@ -12168,9 +11767,7 @@ nav a.active {
 
 @media (max-width: 650px) {
 
-    /* ------------------------------------------
-       HEADER
-       ------------------------------------------ */
+    
 
     .abilities-topline {
         gap: 20px;
@@ -12190,9 +11787,7 @@ nav a.active {
     }
 
 
-    /* ------------------------------------------
-       INTRO
-       ------------------------------------------ */
+    
 
     .bond-introduction {
         margin-bottom: 130px;
@@ -12211,10 +11806,7 @@ nav a.active {
     }
 
 
-    /* ------------------------------------------
-       FIL
-       On le déplace à gauche.
-       ------------------------------------------ */
+    
 
     .ability-thread {
         left: 8px;
@@ -12223,9 +11815,7 @@ nav a.active {
     }
 
 
-    /* ------------------------------------------
-       CHAPITRES
-       ------------------------------------------ */
+    
 
     .ability-chapter {
         display: block;
@@ -12260,9 +11850,7 @@ nav a.active {
     }
 
 
-    /* ------------------------------------------
-       VISUALISATION
-       ------------------------------------------ */
+    
 
     .bond-visual {
         width: calc(100% - 28px);
@@ -12301,9 +11889,7 @@ nav a.active {
     }
 
 
-    /* ------------------------------------------
-       RÈGLES
-       ------------------------------------------ */
+    
 
     .ability-rule,
     .ability-rules {
@@ -12326,9 +11912,7 @@ nav a.active {
     }
 
 
-    /* ------------------------------------------
-       MORSURES
-       ------------------------------------------ */
+    
 
     .bite-progression {
         width: calc(100% - 28px);
@@ -12344,9 +11928,7 @@ nav a.active {
     }
 
 
-    /* ------------------------------------------
-       RÉVÉLATION
-       ------------------------------------------ */
+    
 
     .reciprocal-reveal {
         width: calc(100% - 28px);
@@ -12394,9 +11976,7 @@ nav a.active {
     }
 
 
-    /* ------------------------------------------
-       TABLEAU MIROIR
-       ------------------------------------------ */
+    
 
     .reciprocal-rules {
         width: calc(100% - 28px);
@@ -12422,9 +12002,7 @@ nav a.active {
     }
 
 
-    /* ------------------------------------------
-       FIN
-       ------------------------------------------ */
+    
 
     .broken-bond {
         width: calc(100% - 55px);
@@ -12449,9 +12027,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   MOUVEMENTS RÉDUITS
-   ========================================================== */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -12461,11 +12037,7 @@ nav a.active {
 
 }
 
-/* ==========================================================
-   ==========================================================
-   CAPACITÉS — 02 / STYLE DE COMBAT
-   ==========================================================
-   ========================================================== */
+
 
 .combat-section {
     width: min(1100px, 92%);
@@ -12478,9 +12050,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TRANSITION
-   ========================================================== */
+
 
 .combat-header {
     margin-bottom: 110px;
@@ -12536,9 +12106,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TITRE
-   ========================================================== */
+
 
 .combat-title {
     min-height: 390px;
@@ -12599,9 +12167,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FAUSSES STATS
-   ========================================================== */
+
 
 .combat-profile {
     width:
@@ -12692,9 +12258,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .combat-prose {
     width:
@@ -12727,9 +12291,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ENCAISSER
-   ========================================================== */
+
 
 .combat-endure {
     width:
@@ -12799,9 +12361,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMPACTS
-   ========================================================== */
+
 
 .combat-endure-impact {
     position: absolute;
@@ -12864,9 +12424,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   DERNIER TEXTE
-   ========================================================== */
+
 
 .combat-prose-final {
     margin-bottom: 120px;
@@ -12905,9 +12463,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   RÉSULTAT
-   ========================================================== */
+
 
 .combat-result {
     width:
@@ -12958,9 +12514,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 650px) {
 
@@ -13044,9 +12598,7 @@ nav a.active {
 
 }
 
-/* ==========================================================
-   COMBAT — GLITCH TYPOGRAPHIQUE
-   ========================================================== */
+
 
 .combat-glitch {
     position: relative;
@@ -13057,10 +12609,7 @@ nav a.active {
 }
 
 
-/*
-   Deux copies exactes du mot.
-   Elles restent normalement invisibles.
-*/
+
 
 .combat-glitch::before,
 .combat-glitch::after {
@@ -13079,7 +12628,7 @@ nav a.active {
 }
 
 
-/* rouge */
+
 
 .combat-glitch::before {
     z-index: -1;
@@ -13089,7 +12638,7 @@ nav a.active {
 }
 
 
-/* vert maladif */
+
 
 .combat-glitch::after {
     z-index: -2;
@@ -13099,10 +12648,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   AUCUN.
-   Glitch irrégulier permanent
-   ========================================================== */
+
 
 .combat-glitch-none {
     animation:
@@ -13128,10 +12674,7 @@ nav a.active {
 }
 
 
-/*
-   Le mot principal bouge TRÈS peu.
-   On veut une erreur visuelle, pas un tremblement constant.
-*/
+
 
 @keyframes combat-none-main {
 
@@ -13186,7 +12729,7 @@ nav a.active {
 }
 
 
-/* couche rouge */
+
 
 @keyframes combat-none-red {
 
@@ -13285,7 +12828,7 @@ nav a.active {
 }
 
 
-/* couche verte */
+
 
 @keyframes combat-none-green {
 
@@ -13384,10 +12927,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ENCAISSER
-   Glitch plus brutal / "impact"
-   ========================================================== */
+
 
 .combat-glitch-endure {
     animation:
@@ -13427,9 +12967,7 @@ nav a.active {
     }
 
 
-    /*
-       Premier "coup"
-    */
+    
 
     65% {
         transform:
@@ -13463,9 +13001,7 @@ nav a.active {
     }
 
 
-    /*
-       Deuxième impact plus court
-    */
+    
 
     89% {
         transform:
@@ -13706,9 +13242,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   REDUCED MOTION
-   ========================================================== */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -13726,10 +13260,7 @@ nav a.active {
 }
 
 
-/*
-   On garde les styles qu'on avait prévus
-   pour les vrais mots à l'intérieur.
-*/
+
 
 .combat-title-crash h2 {
     margin: 0;
@@ -13770,10 +13301,7 @@ nav a.active {
         rgba(235,235,235,.76);
 }
 
-/* ==========================================================
-   CRASH HABITUEL — VERSION TEXTE
-   Même cycle que le crash général du site
-   ========================================================== */
+
 
 .critical-text-trip {
     animation:
@@ -13789,16 +13317,9 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CALME 0 → 83 %
-   CRASH 84 → 99 %
-   RESET 100 %
-   ========================================================== */
 
-/* ==========================================================
-   CRASH TEXTE — VERSION FORTE
-   Synchronisé avec le crash général : 10s
-   ========================================================== */
+
+
 
 .critical-text-trip {
     display: inline-block;
@@ -13819,9 +13340,7 @@ nav a.active {
 
 @keyframes critical-text-trip {
 
-    /* ======================================================
-       CALME
-       ====================================================== */
+    
 
     0%,
     83%,
@@ -13839,9 +13358,7 @@ nav a.active {
     }
 
 
-    /* ======================================================
-       LE CRASH COMMENCE
-       ====================================================== */
+    
 
     84% {
         transform:
@@ -13909,7 +13426,7 @@ nav a.active {
     }
 
 
-    /* mini retour avant de repartir */
+    
 
     88% {
         transform:
@@ -13925,9 +13442,7 @@ nav a.active {
     }
 
 
-    /* ======================================================
-       DEUXIÈME VAGUE
-       ====================================================== */
+    
 
     89% {
         transform:
@@ -13995,9 +13510,7 @@ nav a.active {
     }
 
 
-    /* ======================================================
-       PIC DU BAD TRIP
-       ====================================================== */
+    
 
     93% {
         transform:
@@ -14070,9 +13583,7 @@ nav a.active {
     }
 
 
-    /* ======================================================
-       LE CRASH MEURT
-       ====================================================== */
+    
 
     97% {
         transform:
@@ -14116,20 +13627,14 @@ nav a.active {
     }
 }
 
-/* ==========================================================
-   ==========================================================
-   POSSESSIONS
-   ==========================================================
-   ========================================================== */
+
 
 .possessions-page {
     overflow-x: clip;
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .possessions-header {
     width: 100%;
@@ -14216,9 +13721,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CARROUSEL
-   ========================================================== */
+
 
 .house-gallery {
     width:
@@ -14232,9 +13735,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   META
-   ========================================================== */
+
 
 .house-gallery-meta {
     display: flex;
@@ -14274,9 +13775,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FENÊTRE
-   ========================================================== */
+
 
 .house-carousel {
     width: 100%;
@@ -14302,9 +13801,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TRACK
-   ========================================================== */
+
 
 .house-carousel-track {
     display: flex;
@@ -14317,9 +13814,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   SLIDE
-   ========================================================== */
+
 
 .house-slide {
     min-width: 100%;
@@ -14348,9 +13843,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGE
-   ========================================================== */
+
 
 .house-image {
     width: 100%;
@@ -14388,11 +13881,7 @@ nav a.active {
 }
 
 
-/*
-   Le zoom est sur IMG.
-   Le crash est sur .house-image.
-   Donc les transforms ne se battent pas.
-*/
+
 
 .house-slide.active
 .house-image:hover img {
@@ -14406,7 +13895,7 @@ nav a.active {
 }
 
 
-/* assombrissement des bords */
+
 
 .house-image::after {
     content: "";
@@ -14428,9 +13917,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   LÉGENDE
-   ========================================================== */
+
 
 .house-slide figcaption {
     display: flex;
@@ -14463,9 +13950,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FLÈCHES
-   ========================================================== */
+
 
 .house-carousel-arrow {
     width: 48px;
@@ -14545,9 +14030,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   NAV 01 — 09
-   ========================================================== */
+
 
 .house-carousel-nav {
     display: flex;
@@ -14603,9 +14086,7 @@ nav a.active {
 }
 
 
-/*
-   Petit point sous l'image active
-*/
+
 
 .house-carousel-nav button::after {
     content: "";
@@ -14634,9 +14115,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HINT
-   ========================================================== */
+
 
 .house-gallery-hint {
     margin:
@@ -14653,9 +14132,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   DESCRIPTION
-   ========================================================== */
+
 
 .house-description {
     width:
@@ -14669,11 +14146,7 @@ nav a.active {
 }
 
 
-/*
-   Le texte reste réellement centré.
-   Comme avec les numéros de Capacités,
-   l'aside est sorti du flux.
-*/
+
 
 .house-description-aside {
     width: 115px;
@@ -14747,9 +14220,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .house-description {
     width: min(1250px, 96%);
@@ -14809,9 +14280,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ORIGINES HRP
-   ========================================================== */
+
 
 .house-origin {
     display: grid;
@@ -14873,9 +14342,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PROCHAINE POSSESSION
-   ========================================================== */
+
 
 .possession-next {
     width:
@@ -14923,9 +14390,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
+
 
 @media (max-width: 900px) {
 
@@ -15049,11 +14514,7 @@ nav a.active {
 
 }
 
-/* ==========================================================
-   ==========================================================
-   POSSESSIONS — LES CHAMPS
-   ==========================================================
-   ========================================================== */
+
 
 .fields-section {
     width: min(1250px, 96%);
@@ -15066,9 +14527,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .fields-header {
     margin-bottom: 75px;
@@ -15126,9 +14585,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TITRE
-   ========================================================== */
+
 
 .fields-title {
     padding:
@@ -15191,9 +14648,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CHAMPS — DIPTYQUE
-   ========================================================== */
+
 
 .fields-visual {
     width: 100%;
@@ -15208,9 +14663,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   BASE PHOTO
-   ========================================================== */
+
 
 .fields-photo {
     margin: 0;
@@ -15239,9 +14692,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGES
-   ========================================================== */
+
 
 .fields-photo-main .fields-image {
     height:
@@ -15297,7 +14748,7 @@ nav a.active {
 }
 
 
-/* assombrissement */
+
 
 .fields-image::after {
     content: "";
@@ -15319,12 +14770,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PHOTO SECONDAIRE
 
-   Petit contour sombre pour qu'elle se détache
-   de la première lorsqu'elles se chevauchent.
-   ========================================================== */
 
 .fields-photo-secondary {
     padding: 0;
@@ -15333,9 +14779,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   LÉGENDES
-   ========================================================== */
+
 
 .fields-photo figcaption {
     display: grid;
@@ -15366,7 +14810,7 @@ nav a.active {
 }
 
 
-/* La deuxième légende est encore plus discrète */
+
 
 .fields-photo-secondary figcaption {
     font-size: .27rem;
@@ -15376,9 +14820,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
+
 
 @media (max-width: 900px) {
 
@@ -15445,9 +14887,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   SUPERFICIE
-   ========================================================== */
+
 
 .fields-land {
     width:
@@ -15478,7 +14918,7 @@ nav a.active {
 }
 
 
-/* nombre */
+
 
 .fields-land-number small {
     display: block;
@@ -15548,9 +14988,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   LIGNE "PARCELLES"
-   ========================================================== */
+
 
 .fields-land-line {
     height: 24px;
@@ -15622,9 +15060,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   DESCRIPTION
-   ========================================================== */
+
 
 .fields-description {
     width:
@@ -15638,9 +15074,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   ASIDE
-   ========================================================== */
+
 
 .fields-aside {
     width: 100px;
@@ -15715,9 +15149,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .fields-text {
     width:
@@ -15748,10 +15180,7 @@ nav a.active {
 }
 
 
-/*
-   Première lettre, comme pour la maison,
-   pour garder la continuité de la page.
-*/
+
 
 .fields-text p:first-child::first-letter {
     float: left;
@@ -15779,9 +15208,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PETITE LIGNE DE FIN
-   ========================================================== */
+
 
 .fields-footer {
     width:
@@ -15821,9 +15248,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
+
 
 @media (max-width: 900px) {
 
@@ -15960,11 +15385,7 @@ nav a.active {
 
 
 
-/* ==========================================================
-   ==========================================================
-   POSSESSIONS — FRÈGÈTAL
-   ==========================================================
-   ========================================================== */
+
 
 .shop-section {
     width: min(1250px, 96%);
@@ -15973,9 +15394,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .shop-header {
     margin-bottom: 85px;
@@ -16027,9 +15446,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TITRE
-   ========================================================== */
+
 
 .shop-title {
     padding: 75px 0 45px;
@@ -16085,9 +15502,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   NIVEAUX
-   ========================================================== */
+
 
 .shop-level {
     width: 100%;
@@ -16147,9 +15562,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   CARROUSEL SURFACE
-   ========================================================== */
+
 
 .shop-carousel {
     width: min(1150px, 94%);
@@ -16193,9 +15606,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FENÊTRE
-   ========================================================== */
+
 
 .shop-carousel-window {
     position: relative;
@@ -16288,9 +15699,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   FLÈCHES
-   ========================================================== */
+
 
 .shop-arrow {
     width: 48px;
@@ -16367,9 +15776,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   NAVIGATION 01 — 07
-   ========================================================== */
+
 
 .shop-carousel-nav {
     display: flex;
@@ -16445,9 +15852,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TEXTE SURFACE
-   ========================================================== */
+
 
 .shop-copy {
     width: min(1180px, 95%);
@@ -16555,9 +15960,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   DESCENTE
-   ========================================================== */
+
 
 .shop-descent {
     width: min(650px, 70%);
@@ -16650,13 +16053,9 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   SOUS-SOL
-   ========================================================== */
 
-/* ==========================================================
-   SOUS-SOLS — MOSAÏQUE COMPACTE
-   ========================================================== */
+
+
 
 .underground-gallery {
     width: min(1120px, 94%);
@@ -16681,9 +16080,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   TOUTES LES PHOTOS
-   ========================================================== */
+
 
 .underground-photo {
     width: 100%;
@@ -16700,13 +16097,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   PLACEMENT
 
-   01 prend 2 colonnes.
-   02 complète la première ligne.
-   03 / 04 / 05 remplissent parfaitement la seconde.
-   ========================================================== */
 
 .underground-photo:nth-child(1) {
     grid-column:
@@ -16744,10 +16135,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMPORTANT :
-   on annule les anciens placements éventuels
-   ========================================================== */
+
 
 .underground-photo-1,
 .underground-photo-2,
@@ -16759,9 +16147,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   IMAGES
-   ========================================================== */
+
 
 .underground-image {
     width: 100%;
@@ -16811,11 +16197,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   OMBRE INTERNE
 
-   Les cases restent séparées sans avoir de gros cadre noir.
-   ========================================================== */
 
 .underground-image::after {
     content: "";
@@ -16839,9 +16221,7 @@ nav a.active {
 }
 
 
-/* ==========================================================
-   LÉGENDES INTÉGRÉES AUX IMAGES
-   ========================================================== */
+
 
 .underground-photo figcaption {
     position: absolute;
@@ -16887,7 +16267,7 @@ nav a.active {
 }
 
 
-/* La première est la vue principale */
+
 
 .underground-photo:nth-child(1)
 figcaption span {
@@ -16895,9 +16275,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 650px) {
 
@@ -16951,9 +16329,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   TITRE — SOUS-SOLS
-   ========================================================== */
+
 
 .underground-title {
     width: min(1120px, 94%);
@@ -16968,7 +16344,7 @@ figcaption span {
 }
 
 
-/* petit label au-dessus */
+
 
 .underground-eyebrow {
     display: flex;
@@ -16987,7 +16363,7 @@ figcaption span {
 }
 
 
-/* petite ligne avant le label */
+
 
 .underground-eyebrow::before {
     content: "";
@@ -17002,9 +16378,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   LES SOUS-SOLS
-   ========================================================== */
+
 
 .underground-title h3 {
     margin: 0;
@@ -17031,9 +16405,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PETITE PHRASE
-   ========================================================== */
+
 
 .underground-title p {
     margin:
@@ -17049,9 +16421,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 650px) {
 
@@ -17078,9 +16448,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   ORIGINES HRP — BOUTIQUE
-   ========================================================== */
+
 
 .shop-origin {
     width: min(1080px, 92%);
@@ -17109,7 +16477,7 @@ figcaption span {
 }
 
 
-/* ORIGINES HRP */
+
 
 .shop-origin span {
     font-size: .3rem;
@@ -17121,7 +16489,7 @@ figcaption span {
 }
 
 
-/* ligne centrale */
+
 
 .shop-origin i {
     width: 100%;
@@ -17139,7 +16507,7 @@ figcaption span {
 }
 
 
-/* GREENTAGE — BRUXELLES */
+
 
 .shop-origin strong {
     font-family:
@@ -17159,9 +16527,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 650px) {
 
@@ -17189,9 +16555,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   TEXTE — SOUS-SOLS
-   ========================================================== */
+
 
 .underground-copy {
     width: min(1080px, 92%);
@@ -17204,7 +16568,7 @@ figcaption span {
 }
 
 
-/* petite ligne discrète au-dessus du texte */
+
 
 .underground-copy::before {
     content: "";
@@ -17221,9 +16585,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PARAGRAPHE
-   ========================================================== */
+
 
 .underground-copy p {
     margin: 0;
@@ -17241,9 +16603,7 @@ figcaption span {
 
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 650px) {
 
@@ -17271,11 +16631,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   ==========================================================
-   POSSESSIONS — LA MEUTE
-   ==========================================================
-   ========================================================== */
+
 
 .dogs-section {
     width: min(1250px, 96%);
@@ -17283,9 +16639,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   HEADER
-   ========================================================== */
+
 
 .dogs-header {
     margin-bottom: 80px;
@@ -17337,9 +16691,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   TITRE
-   ========================================================== */
+
 
 .dogs-title {
     padding: 70px 0 35px;
@@ -17399,9 +16751,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   INTRODUCTION
-   ========================================================== */
+
 
 .dogs-introduction {
     width: min(1180px, 95%);
@@ -17500,9 +16850,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PROFILS
-   ========================================================== */
+
 
 .dog-profile {
     width: min(1160px, 95%);
@@ -17522,9 +16870,7 @@ figcaption span {
 }
 
 
-/*
-   Bibis inverse la disposition.
-*/
+
 
 .dog-profile-right {
     grid-template-columns:
@@ -17545,13 +16891,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PHOTO
 
-   IMPORTANT :
-   aucune hauteur imposée.
-   Le ratio original de chaque image est conservé.
-   ========================================================== */
 
 .dog-photo {
     width: 100%;
@@ -17603,7 +16943,7 @@ figcaption span {
 }
 
 
-/* léger voile, sans modifier le ratio */
+
 
 .dog-image::after {
     content: "";
@@ -17620,9 +16960,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   LÉGENDE PHOTO
-   ========================================================== */
+
 
 .dog-photo figcaption {
     display: grid;
@@ -17663,18 +17001,14 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   CONTENU
-   ========================================================== */
+
 
 .dog-content {
     min-width: 0;
 }
 
 
-/* ==========================================================
-   NOM
-   ========================================================== */
+
 
 .dog-name {
     margin-bottom: 35px;
@@ -17735,11 +17069,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PARAGRAPHES
 
-   Pas de lettrine. Promis. Je me tiens.
-   ========================================================== */
 
 .dog-content > p {
     margin: 0;
@@ -17768,12 +17098,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PETITE VARIATION POUR CASSER LA RIGIDITÉ
 
-   Les images ne sont volontairement pas toutes de
-   la même largeur.
-   ========================================================== */
 
 .dog-profile:nth-of-type(3) .dog-photo {
     width: 92%;
@@ -17786,9 +17111,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   FIN
-   ========================================================== */
+
 
 .dogs-end {
     width: min(850px, 78%);
@@ -17828,9 +17151,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   RESPONSIVE
-   ========================================================== */
+
 
 @media (max-width: 800px) {
 
@@ -17917,10 +17238,7 @@ figcaption span {
     }
 
 
-    /*
-       Sur téléphone :
-       image puis texte pour les trois.
-    */
+    
 
     .dog-profile,
     .dog-profile-right {
@@ -17949,11 +17267,7 @@ figcaption span {
     }
 
 
-    /*
-       Une verticale n'envahit pas tout l'écran :
-       elle reste limitée en largeur, mais son ratio
-       original demeure intact.
-    */
+    
 
     .dog-photo {
         width: min(480px, 88%);
@@ -17980,9 +17294,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   MAN — COMPOSITION SPÉCIALE
-   ========================================================== */
+
 
 .dog-profile-man {
     width: min(1080px, 92%);
@@ -17995,9 +17307,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   TITRE
-   ========================================================== */
+
 
 .dog-man-heading {
     width: 100%;
@@ -18011,12 +17321,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   IMAGE
 
-   Contrairement aux deux autres chiens, l'image de Man
-   occupe une vraie bande visuelle.
-   ========================================================== */
 
 .dog-man-photo {
     width: 100%;
@@ -18045,9 +17350,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .dog-man-content {
     width: 100%;
@@ -18071,9 +17374,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 650px) {
 
@@ -18107,9 +17408,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   FUN FACTS — FRAGMENTS INTERACTIFS
-   ========================================================== */
+
 
 .facts-fragments {
     width: min(1120px, 94%);
@@ -18117,9 +17416,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   FRAGMENT
-   ========================================================== */
+
 
 .fact-fragment {
     position: relative;
@@ -18138,7 +17435,7 @@ figcaption span {
 }
 
 
-/* Lorsqu'un fragment est ouvert */
+
 
 .fact-fragment.open {
     background:
@@ -18152,9 +17449,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   BOUTON
-   ========================================================== */
+
 
 .fact-trigger {
     width: 100%;
@@ -18189,9 +17484,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   NUMÉRO
-   ========================================================== */
+
 
 .fact-number {
     font-family:
@@ -18212,9 +17505,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   LIBELLÉ
-   ========================================================== */
+
 
 .fact-trigger-main {
     display: flex;
@@ -18256,9 +17547,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   OUVRIR
-   ========================================================== */
+
 
 .fact-open {
     min-width: 110px;
@@ -18290,7 +17579,7 @@ figcaption span {
 }
 
 
-/* petite barre verticale = + */
+
 
 .fact-open i::after {
     content: "";
@@ -18326,9 +17615,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   HOVER
-   ========================================================== */
+
 
 .fact-trigger:hover .fact-number {
     color:
@@ -18352,9 +17639,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   OUVERT
-   ========================================================== */
+
 
 .fact-fragment.open .fact-number {
     color:
@@ -18374,16 +17659,14 @@ figcaption span {
 }
 
 
-/* + devient — */
+
 
 .fact-fragment.open .fact-open i::after {
     opacity: 0;
 }
 
 
-/* ==========================================================
-   CONTENU CACHÉ
-   ========================================================== */
+
 
 .fact-reveal {
     display: grid;
@@ -18414,9 +17697,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   CONTENU OUVERT
-   ========================================================== */
+
 
 .fact-fragment.open .fact-reveal {
     grid-template-rows: 1fr;
@@ -18430,9 +17711,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PETITE LIGNE MÉTA
-   ========================================================== */
+
 
 .fact-reveal-meta {
     margin-bottom: 28px;
@@ -18482,9 +17761,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   TEXTE
-   ========================================================== */
+
 
 .fact-reveal-inner > p {
     margin: 0;
@@ -18501,9 +17778,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PETIT DÉTAIL — TEMPS
-   ========================================================== */
+
 
 .fact-whisper {
     display: block;
@@ -18525,9 +17800,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   TAGS MUSIQUE
-   ========================================================== */
+
 
 .fact-mini-tags {
     margin-top: 35px;
@@ -18558,9 +17831,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 650px) {
 
@@ -18644,11 +17915,7 @@ figcaption span {
 
 
 
-/* ==========================================================
-   ==========================================================
-   ACCUEIL
-   ==========================================================
-   ========================================================== */
+
 
 .home-page {
     width: calc(100% - 260px);
@@ -18663,9 +17930,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   ÉCRAN D'ENTRÉE
-   ========================================================== */
+
 
 .home-gate {
     position: absolute;
@@ -18692,7 +17957,7 @@ figcaption span {
 }
 
 
-/* une fois lancé */
+
 
 .home-gate.started {
     opacity: 0;
@@ -18703,9 +17968,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PETIT BRUIT VISUEL
-   ========================================================== */
+
 
 .home-gate-noise {
     position: absolute;
@@ -18726,9 +17989,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PLAY
-   ========================================================== */
+
 
 .home-play {
     width: 160px;
@@ -18813,9 +18074,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   LA SCÈNE
-   ========================================================== */
+
 
 .home-trip {
     width: 100%;
@@ -18837,11 +18096,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   CENTRE
 
-   PHOTO + NOM restent VRAIMENT centrés.
-   ========================================================== */
 
 .home-center {
     position: absolute;
@@ -18870,9 +18125,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PHOTO
-   ========================================================== */
+
 
 .home-vincent-photo {
     width:
@@ -18920,9 +18173,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   NOM
-   ========================================================== */
+
 
 .home-vincent-name {
     margin-top: 24px;
@@ -18975,9 +18226,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   VINCENT — TANGAGE + DÉFORMATION
-   ========================================================== */
+
 
 .home-center {
     transform-origin:
@@ -19078,9 +18327,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   MOTS VOLANTS
-   ========================================================== */
+
 
 .home-words {
     position: absolute;
@@ -19129,7 +18376,7 @@ figcaption span {
 }
 
 
-/* Quelques mots deviennent plus présents */
+
 
 .trip-word:nth-child(3n) {
     font-size:
@@ -19148,9 +18395,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   PETITS DÉTAILS
-   ========================================================== */
+
 
 .home-corner {
     position: absolute;
@@ -19180,9 +18425,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 900px) {
 
@@ -19239,9 +18482,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   REDUCED MOTION
-   ========================================================== */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -19251,9 +18492,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   ACCUEIL — FOND SURCHARGÉ
-   ========================================================== */
+
 
 .home-body {
     background:
@@ -19287,10 +18526,7 @@ figcaption span {
 }
 
 
-/*
- * On détourne les pseudo-éléments généraux du body
- * uniquement sur l'accueil.
- */
+
 
 .home-body::before {
     content: "";
@@ -19381,9 +18617,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   COUCHE PSYCHÉDÉLIQUE 01
-   ========================================================== */
+
 
 .home-trip::before {
     content: "";
@@ -19476,9 +18710,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   COUCHE PSYCHÉDÉLIQUE 02 — SALE / GRANULEUSE
-   ========================================================== */
+
 
 .home-trip::after {
     content: "";
@@ -19550,9 +18782,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   PHOTO — DÉFORMATION SECONDAIRE
-   ========================================================== */
+
 
 .home-vincent-photo {
     transform-origin:
@@ -19602,9 +18832,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   NOM — DÉFORMATION INDÉPENDANTE
-   ========================================================== */
+
 
 .home-vincent-name {
     transform-origin:
@@ -19702,9 +18930,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   PHRASE-CHENILLE
-   ========================================================== */
+
 
 .trip-sentence {
     position: absolute;
@@ -19758,12 +18984,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   COULEURS DIFFÉRENTES
 
-   Pas arc-en-ciel propre.
-   Plutôt chimique / malade.
-   ========================================================== */
 
 .trip-sentence span:nth-child(4n + 1) {
     color:
@@ -19805,10 +19026,7 @@ figcaption span {
 }
 
 
-/*
- * Les trois mots temporels sont un peu
- * plus présents.
- */
+
 
 .trip-sentence span:nth-child(-n + 3) {
     font-size:
@@ -19931,9 +19149,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   ACCUEIL — CHAMP HALLUCINATOIRE
-   ========================================================== */
+
 
 .hallucination-field {
     position: absolute;
@@ -19949,9 +19165,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   YEUX
-   ========================================================== */
+
 
 .hall-eye {
     position: absolute;
@@ -20037,7 +19251,7 @@ figcaption span {
 }
 
 
-/* POSITIONS */
+
 
 .hall-eye-1 {
     left: 5%;
@@ -20143,9 +19357,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   ANNEAUX
-   ========================================================== */
+
 
 .hall-ring {
     position: absolute;
@@ -20261,9 +19473,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   SPIRALES / TOURBILLONS
-   ========================================================== */
+
 
 .hall-spiral {
     position: absolute;
@@ -20342,9 +19552,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   SYMBOLES PARASITES
-   ========================================================== */
+
 
 .hall-symbol {
     position: absolute;
@@ -20466,9 +19674,7 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   GRIFFURES
-   ========================================================== */
+
 
 .hall-scratch {
     position: absolute;
@@ -20546,9 +19752,7 @@ figcaption span {
     opacity: .18;
 }
 
-/* ==========================================================
-   VINCENT — AFTERIMAGES
-   ========================================================== */
+
 
 .home-vincent-photo {
     position: relative;
@@ -20587,7 +19791,7 @@ figcaption span {
 }
 
 
-/* ROUGE */
+
 
 .vincent-ghost-red {
     filter:
@@ -20604,7 +19808,7 @@ figcaption span {
 }
 
 
-/* VERT */
+
 
 .vincent-ghost-green {
     filter:
@@ -20621,7 +19825,7 @@ figcaption span {
 }
 
 
-/* VIOLET */
+
 
 .vincent-ghost-purple {
     filter:
@@ -20738,18 +19942,14 @@ figcaption span {
 
 }
 
-/* ==========================================================
-   CHENILLE — FANTÔMES / TRAÎNÉES CHROMATIQUES
-   ========================================================== */
+
 
 .trip-sentence {
     isolation: isolate;
 }
 
 
-/*
- * Les vrais mots restent au-dessus.
- */
+
 
 .trip-sentence > span:not(.sentence-ghost) {
     position: absolute;
@@ -20757,9 +19957,7 @@ figcaption span {
 }
 
 
-/*
- * Tous les fantômes sont purement décoratifs.
- */
+
 
 .sentence-ghost {
     position: absolute;
@@ -20788,15 +19986,10 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   CHENILLE — DÉCROISSANCE DES FANTÔMES
-   ========================================================== */
 
 
-/* ----------------------------------------------------------
-   FANTÔME 01
-   Très récent : encore net et bien visible
-   ---------------------------------------------------------- */
+
+
 
 .sentence-ghost-1 {
     color: rgba(245, 35, 90, .78);
@@ -20815,10 +20008,7 @@ figcaption span {
 }
 
 
-/* ----------------------------------------------------------
-   FANTÔME 02
-   Plus ancien : moins opaque, commence à baver
-   ---------------------------------------------------------- */
+
 
 .sentence-ghost-2 {
     color: rgba(75, 235, 125, .62);
@@ -20837,10 +20027,7 @@ figcaption span {
 }
 
 
-/* ----------------------------------------------------------
-   FANTÔME 03
-   Très ancien : presque une rémanence
-   ---------------------------------------------------------- */
+
 
 .sentence-ghost-3 {
     color: rgba(185, 75, 245, .46);
@@ -20859,19 +20046,13 @@ figcaption span {
 }
 
 
-/*
- * Quand le vrai mot n'est pas encore né,
- * ses fantômes non plus.
- */
+
 
 .sentence-ghost.ghost-hidden {
     opacity: 0 !important;
 }
 
-/* ----------------------------------------------------------
-   FANTÔME 04
-   Rémanence terminale : presque disparue
-   ---------------------------------------------------------- */
+
 
 .sentence-ghost-4 {
     color: rgba(105, 120, 255, .35);
@@ -20901,10 +20082,7 @@ figcaption span {
         linear
         infinite;
 
-    /*
-     * L'horloge attend le clic PLAY. Elle démarre donc en même temps
-     * que la scène et sert de référence exacte au JS des fantômes.
-     */
+    
     animation-play-state: paused;
 }
 
@@ -21019,16 +20197,9 @@ figcaption span {
         saturate(1.3);
 }
 
-/* ==========================================================
-   ==========================================================
-   ACCUEIL — GRAND CRASH / DÉGRADATION INFINIE
-   ==========================================================
-   ========================================================== */
 
-/*
- * Ces couches ne participent jamais à la mise en page
- * et ne touchent surtout pas au transform de body.
- */
+
+
 
 .crash-spectacle,
 .corruption-field {
@@ -21055,9 +20226,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   FLASHES
-   ========================================================== */
+
 
 .crash-flash,
 .crash-blackout,
@@ -21191,9 +20360,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   BLACKOUTS
-   ========================================================== */
+
 
 .crash-blackout {
     background:
@@ -21262,9 +20429,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   BRUIT / NEIGE / PIXELS
-   ========================================================== */
+
 
 .crash-noise {
     opacity: 0;
@@ -21351,9 +20516,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   DÉDOUBLEMENT RGB GLOBAL
-   ========================================================== */
+
 
 .crash-rgb {
     opacity: 0;
@@ -21433,9 +20596,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   DÉCHIRURES ALÉATOIRES CRÉÉES PAR JS
-   ========================================================== */
+
 
 .crash-tear {
     position: absolute;
@@ -21543,10 +20704,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   CICATRICES PERMANENTES
-   AUCUNE LIMITE. Aucun ancien bug n'est supprimé.
-   ========================================================== */
+
 
 .corruption-field {
     z-index: 85000;
@@ -21582,7 +20740,7 @@ figcaption span {
 }
 
 
-/* bande d'image "cassée" */
+
 
 .permanent-bug-slice {
     min-height: 4px;
@@ -21637,7 +20795,7 @@ figcaption span {
 }
 
 
-/* bloc corrompu */
+
 
 .permanent-bug-block {
     min-width: 22px;
@@ -21689,7 +20847,7 @@ figcaption span {
 }
 
 
-/* ligne morte */
+
 
 .permanent-bug-deadline {
     height: 1px !important;
@@ -21706,7 +20864,7 @@ figcaption span {
 }
 
 
-/* texte / fragment RGB */
+
 
 .permanent-bug-rgb,
 .permanent-bug-signal {
@@ -21772,7 +20930,7 @@ figcaption span {
 }
 
 
-/* trou noir / morceau d'écran mort */
+
 
 .permanent-bug-void {
     min-width: 18px;
@@ -21795,18 +20953,9 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   LE CONTENU LUI-MÊME PREND UN COUP PENDANT LA CRISE
-   On transforme .home-trip, jamais body : la nav fixe reste saine.
-   ========================================================== */
 
-/*
- * On fait subir le crash au CONTENU de la scène,
- * pas au conteneur .home-trip lui-même.
- *
- * Sinon filter sur .home-trip transforme le repère
- * des éléments fixed comme .corruption-field.
- */
+
+
 
 .home-trip.started.crash-hit .home-center,
 .home-trip.started.crash-hit .home-words,
@@ -21883,9 +21032,7 @@ figcaption span {
 }
 
 
-/*
- * Le gate doit rester au-dessus de TOUT avant PLAY.
- */
+
 
 .home-body .home-gate {
     position: fixed;
@@ -21896,10 +21043,7 @@ figcaption span {
 }
 
 
-/*
- * Réduction automatique des flashes si l'utilisateur a explicitement
- * demandé moins de mouvement au niveau du système.
- */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -21918,25 +21062,17 @@ figcaption span {
     }
 }
 
-/* ==========================================================
-   BUGS PERMANENTS — MODE "ÉCRAN RÉELLEMENT EN TRAIN DE CREVER"
-   À COLLER TOUT EN BAS DU CSS
-   ========================================================== */
 
 
-/* Le champ de corruption passe franchement devant la scène. */
+
+
 
 .corruption-field {
     z-index: 95000;
 }
 
 
-/* ----------------------------------------------------------
-   BASE COMMUNE
 
-   Avant : assez transparent / décoratif.
-   Maintenant : beaucoup plus matériel, agressif et opaque.
-   ---------------------------------------------------------- */
 
 .permanent-bug {
     opacity: .88;
@@ -21946,17 +21082,12 @@ figcaption span {
         saturate(2.2)
         contrast(1.55);
 
-    /*
-     * IMPORTANT :
-     * normal = le bug recouvre réellement ce qu'il y a dessous.
-     */
+    
     mix-blend-mode: normal;
 }
 
 
-/* ==========================================================
-   BANDES D'IMAGE CORROMPUES
-   ========================================================== */
+
 
 .permanent-bug-slice {
     min-height: 8px;
@@ -22000,12 +21131,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   BLOCS CORROMPUS
 
-   Ceux-là doivent vraiment donner l'impression qu'un morceau
-   du framebuffer vient de mourir.
-   ========================================================== */
 
 .permanent-bug-block {
     min-width: 55px;
@@ -22040,11 +21166,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   LIGNES MORTES
 
-   Plus "écran LCD qui vient de péter".
-   ========================================================== */
 
 .permanent-bug-deadline {
     height: 3px !important;
@@ -22062,11 +21184,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   ERROR / NULL / SIGNAL LOST / ETC.
 
-   Beaucoup plus gros.
-   ========================================================== */
 
 .permanent-bug-rgb,
 .permanent-bug-signal {
@@ -22112,11 +21230,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   TROUS NOIRS / PIXELS MORTS
 
-   Là on ne voit VRAIMENT plus ce qu'il y a derrière.
-   ========================================================== */
 
 .permanent-bug-void {
     min-width: 45px;
@@ -22142,9 +21256,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   ANIMATIONS PLUS VIOLENTES
-   ========================================================== */
+
 
 @keyframes permanent-slice-twitch {
 
@@ -22233,11 +21345,7 @@ figcaption span {
     overflow: hidden;
 }
 
-/* ==========================================================
-   ==========================================================
-   ACCUEIL — AVERTISSEMENT ANTI-SPAM
-   ==========================================================
-   ========================================================== */
+
 
 .hurt-warning {
     position: fixed;
@@ -22266,7 +21374,7 @@ figcaption span {
 }
 
 
-/* Le monde derrière devient inaccessible et malade. */
+
 
 .hurt-warning-backdrop {
     position: absolute;
@@ -22294,9 +21402,7 @@ figcaption span {
 }
 
 
-/* ----------------------------------------------------------
-   PANNEAU
-   ---------------------------------------------------------- */
+
 
 .hurt-warning-panel {
     position: relative;
@@ -22430,9 +21536,7 @@ figcaption span {
 }
 
 
-/* ----------------------------------------------------------
-   TÊTE DE MORT
-   ---------------------------------------------------------- */
+
 
 .hurt-warning-skull {
     position: relative;
@@ -22599,9 +21703,7 @@ figcaption span {
 }
 
 
-/* ----------------------------------------------------------
-   CHOIX
-   ---------------------------------------------------------- */
+
 
 .hurt-warning-actions {
     position: relative;
@@ -22743,9 +21845,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   MAUVAISE RÉPONSE — "TRÈS BIEN..."
-   ========================================================== */
+
 
 .hurt-screamer {
     position: absolute;
@@ -23024,9 +22124,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   MOBILE
-   ========================================================== */
+
 
 @media (max-width: 650px) {
 
@@ -23056,9 +22154,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   REDUCED MOTION
-   ========================================================== */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -23073,10 +22169,7 @@ figcaption span {
 }
 
 
-/* ==========================================================
-   ACCUEIL — ÉTAT TERMINAL APRÈS "BAHAHA NON"
-   Aucun retour : seul un rafraîchissement recharge la page.
-   ========================================================== */
+
 
 .hurt-warning.is-screaming {
     pointer-events: auto;
@@ -23093,10 +22186,7 @@ figcaption span {
     visibility: visible !important;
     pointer-events: auto;
 
-    /*
-     * On remplace l'ancienne animation 3.2 s :
-     * l'écran final ne disparaît plus.
-     */
+    
     animation: none !important;
 
     background:
@@ -23207,4 +22297,30 @@ figcaption span {
             contrast(4.8)
             brightness(.48);
     }
+}
+
+.public-profile-link-wrap {
+    display: flex;
+    justify-content: center;
+    margin: 48px 0 0;
+}
+.public-profile-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 18px;
+    padding: 17px 27px;
+    border: 1px solid rgba(169, 0, 255, .55);
+    color: #f4e8ff;
+    background: rgba(169, 0, 255, .08);
+    font-family: "Space Mono", monospace;
+    font-size: .82rem;
+    letter-spacing: .08em;
+    text-decoration: none;
+    transition: background .25s, border-color .25s, transform .25s, box-shadow .25s;
+}
+.public-profile-link:hover, .public-profile-link:focus-visible {
+    background: rgba(169, 0, 255, .22);
+    border-color: #c05aff;
+    box-shadow: 0 0 25px rgba(169, 0, 255, .22);
+    transform: translateY(-3px);
 }
