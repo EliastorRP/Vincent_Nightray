@@ -22324,3 +22324,38 @@ figcaption span {
     box-shadow: 0 0 25px rgba(169, 0, 255, .22);
     transform: translateY(-3px);
 }
+
+/* Histoire — connaissances */
+.connections-section{position:relative;margin:0 0 170px;padding:100px 0 120px;border-top:1px solid rgba(255,255,255,.09);background:radial-gradient(ellipse at 87% 15%,rgba(114,123,83,.09),transparent 45%)}
+.connections-inner{width:min(1250px,92%);margin:auto}
+.connections-kicker,.connection-meta{display:flex;justify-content:space-between;gap:20px;font-size:10px;letter-spacing:.25em;color:rgba(220,221,202,.45);text-transform:uppercase}
+.connections-heading{display:flex;gap:35px;align-items:flex-start;margin:95px 0 115px}.connections-index{font-family:Georgia,serif;font-size:clamp(3rem,7vw,7rem);line-height:.85;color:rgba(186,192,153,.18)}
+.connections-eyebrow{font-size:11px;letter-spacing:.36em;color:#a5ae8c}.connections-heading h2{font-size:clamp(2.6rem,6.7vw,6.6rem);font-weight:400;letter-spacing:-.045em;line-height:1.08;margin:15px 0 24px;color:#e7e6de}.connections-period{color:#a6b28c}.connections-heading p{font-family:Georgia,serif;font-style:italic;color:rgba(225,225,212,.5);font-size:1rem}
+.connection-entry{display:grid;grid-template-columns:minmax(140px,23%) minmax(0,1fr);gap:7%;border-top:1px solid rgba(255,255,255,.13);padding-top:55px}.connection-side{display:flex;flex-direction:column;align-items:flex-start;gap:45px}.connection-number,.connection-side-note{font-size:10px;letter-spacing:.22em;color:#a3ad8c}.connection-flower{font-size:clamp(4rem,10vw,10rem);line-height:1;color:rgba(164,176,133,.23);font-family:Georgia,serif}.connection-side-note{writing-mode:vertical-rl;transform:rotate(180deg);min-height:180px}
+.connection-body h3{font-family:Georgia,serif;font-weight:400;color:#e8e5d9;font-size:clamp(2.7rem,5vw,5rem);margin:42px 0 30px}.connection-body h3 span{display:block;font-size:clamp(.9rem,1.5vw,1.2rem);font-style:italic;color:#a9b392;margin-top:10px}.connection-rule{width:80px;height:1px;background:#a9b392;margin-bottom:50px}.connection-prose p{font-size:clamp(.9rem,1.05vw,1.04rem);line-height:2.15;text-align:justify;color:rgba(230,230,224,.72);margin:0}.connection-prose p:first-of-type::first-letter{font-family:Georgia,serif;font-size:3.7em;float:left;line-height:.9;padding:6px 12px 0 0;color:#b3bc9b}.connection-interlude{display:flex;align-items:center;justify-content:center;gap:22px;margin:65px 0;color:#9eaa83}.connection-interlude em{font-family:Georgia,serif;font-size:1rem;color:rgba(226,225,211,.65)}.connection-closing{font-family:Georgia,serif;font-size:clamp(1.2rem,2.2vw,2rem);line-height:1.5;letter-spacing:.1em;color:#b1bd96;text-align:center;margin:100px auto 0;max-width:550px}
+@media(max-width:700px){.connections-section{padding:70px 0 85px;margin-bottom:60px}.connections-kicker,.connection-meta{font-size:9px;letter-spacing:.12em}.connections-heading{gap:15px;margin:65px 0 75px}.connections-index{font-size:3rem}.connections-heading h2{font-size:clamp(2rem,8vw,3.6rem)}.connection-entry{grid-template-columns:1fr;gap:25px}.connection-side{flex-direction:row;align-items:center;justify-content:space-between}.connection-flower{font-size:3rem}.connection-side-note{writing-mode:initial;transform:none;min-height:0;text-align:right}.connection-body h3{margin-top:35px}.connection-prose p{text-align:left;line-height:1.95}.connection-interlude{gap:10px;margin:45px 0}.connection-interlude em{text-align:center}.connection-closing{margin-top:65px}}
+
+/* Portraits des connaissances */
+.connection-portrait { margin: 24px 0 30px; width: 100%; max-width: 260px; }
+.connection-portrait img { display: block; width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: center top; border: 1px solid rgba(152,170,137,.48); border-radius: 2px; background: rgba(35,44,37,.65); filter: saturate(.85); }
+.connection-portrait figcaption { margin-top: 10px; font-size: 10px; letter-spacing: .18em; opacity: .65; text-align: center; }
+@media (max-width: 700px) { .connection-portrait { max-width: 220px; margin: 20px auto 28px; } }
+
+/* Ramuda — portrait flottant, continuité avec la mise en page d'Histoire */
+.connections-section { background: transparent; padding-top: 75px; }
+.connections-inner { width: min(1100px, 92%); }
+.connection-entry { display: block; padding-top: 38px; }
+.connection-body { display: flow-root; }
+.connection-prose { display: flow-root; }
+.connection-prose .connection-portrait { float: left; width: clamp(185px, 29%, 310px); max-width: none; margin: 8px 32px 22px 0; }
+.connection-prose .connection-portrait img { width: 100%; height: auto; aspect-ratio: 3 / 4; object-fit: cover; }
+.connection-prose p { margin-bottom: 24px; }
+.connection-prose .connection-interlude { clear: both; }
+@media(max-width:700px) {
+  .connections-section { padding-top: 50px; }
+  .connection-prose .connection-portrait { float: left; width: 42%; margin: 4px 18px 12px 0; }
+  .connection-prose p { text-align: left; }
+}
+@media(max-width:420px) {
+  .connection-prose .connection-portrait { width: 48%; margin-right: 14px; }
+}
